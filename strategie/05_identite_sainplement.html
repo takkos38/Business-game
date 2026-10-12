@@ -65,6 +65,25 @@ ul.dl.no li::before{background:var(--tomate)}
 :root[data-theme="dark"] .stage{background:#232C27}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stage{background:#232C27}}
 footer{margin-top:60px;color:var(--muted);font-size:14px}
+@page{size:A4 landscape;margin:10mm}
+@media print{
+  :root{--bg:#FFF8EE !important;--fg:#1D2621 !important;--muted:#5B6660 !important;--line:#E7DED0 !important;--card:#FFFFFF !important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .wrap{padding:0;max-width:none}
+  .card,.sw,.insta,.stage,.hero,.grid>div{break-inside:avoid}
+  h2{break-after:avoid;margin-top:28px}
+  .stage{background:#EFE6D7 !important;min-height:200px;padding:14px}
+  .pb{break-before:page}
+  footer{display:none}
+  .hero{padding:40px 28px}
+  .g3.decl{grid-template-columns:repeat(3,1fr) !important;gap:14px}
+  .decl .stage{min-height:0;height:250px}
+  .decl .insta .img{aspect-ratio:auto;height:180px}
+  .decl .insta .img{padding:12px}
+  .decl .insta .big{font-size:26px}
+  .decl .insta .cap{font-size:11px}
+  .decl .bcard{padding:10px}
+}
 </style>
 </head>
 <body>
@@ -106,7 +125,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14px}
   <div class="card"><div class="eyebrow">Personnalité</div><h3 style="margin-top:6px">La pote qui cuisine bien</h3><p class="sub" style="margin:6px 0 0">Complice, positive, jamais moralisatrice.</p></div>
 </div>
 
-<h2>Le logo</h2>
+<h2 class="pb">Le logo</h2>
 <p class="sub">« sain » en vert, « plement » en encre : on lit le jeu de mots immédiatement. Le symbole seul sert d'avatar Instagram, de tampon et de motif.</p>
 <div class="grid g3">
   <div class="card" style="display:grid;place-items:center;min-height:180px;background:#FFF8EE">
@@ -132,7 +151,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14px}
   <div class="sw"><div class="c" style="background:#1D2621"></div><div class="t"><b>Encre</b><code>#1D2621</code><small>Texte</small></div></div>
 </div>
 
-<h2>Les typographies</h2>
+<h2 class="pb">Les typographies</h2>
 <div class="grid g2">
   <div class="card"><div class="eyebrow">Titres · Bricolage Grotesque ExtraBold</div><div class="typeA" style="margin-top:10px">Ton bowl healthy en 20 min.</div></div>
   <div class="card"><div class="eyebrow">Textes · DM Sans</div><p class="typeB">Alice arrive chez toi à vélo avec ses épices. Vous cuisinez ensemble une recette saine, 5 ingrédients maximum, et tu repars avec les astuces pour la refaire toute la semaine.</p></div>
@@ -155,8 +174,8 @@ footer{margin-top:60px;color:var(--muted);font-size:14px}
   </div>
 </div>
 
-<h2>Les déclinaisons</h2>
-<div class="grid g3">
+<h2 class="pb">Les déclinaisons</h2>
+<div class="grid g3 decl">
   <div>
     <div class="insta">
       <div class="top"><span style="width:28px;height:28px;border-radius:50%;background:#2E7D55;display:grid;place-items:center"><svg width="20" height="20" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg></span>sainplement</div>
