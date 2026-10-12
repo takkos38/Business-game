@@ -14,3 +14,9 @@
 Temps admin de Théo : 26 h sur 30 h disponibles.
 Prévision : ~90 cours, résultat ≈ −2 000 € (dépenses ponctuelles de lancement).
 À surveiller en février : demande attendue ~158 cours > capacité vélo (120) → passer en transports en commun ou voiture.
+
+### Résultats T1 – Janvier
+- Classement univers C : **1er / 10**, score 91,0 (moyenne ≈ 82). Financier 58 % · Commercial 96 % · Responsable 112 % · Efficace 99 %.
+- 119 cours vendus (4 perdus), CA 4 403 €, 59 clients, panier 2,02, satisfaction 80,7, part de marché 10,5 %.
+- Résultat −1 025 € (dont 1 300 € de dépenses ponctuelles : matériel + média). Trésorerie 7 718 €.
+- Alice saturée : 89,3 h de cours + 29,8 h de vélo = 98,9 % d'occupation. Théo : 36 h / 40 h.
