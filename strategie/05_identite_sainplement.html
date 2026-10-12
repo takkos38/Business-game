@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sainplement – Identité</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --basilic:#2E7D55; --pousse:#A7D46F; --citron:#FFD24A; --tomate:#F25C3B;
+  --creme:#FFF8EE; --encre:#1D2621; --muted:#5B6660; --line:#E7DED0; --card:#FFFFFF;
+  --bg:var(--creme); --fg:var(--encre);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#141A17; --fg:#F3EEE5; --muted:#A9B3AD; --line:#2A332E; --card:#1C2420; }
+}
+:root[data-theme="dark"]{ --bg:#141A17; --fg:#F3EEE5; --muted:#A9B3AD; --line:#2A332E; --card:#1C2420; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:40px 16px 80px}
+h1,h2,h3,.disp{font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+h2{font-size:28px;font-weight:800;margin:56px 0 6px}
+.sub{color:var(--muted);margin-bottom:20px;max-width:680px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+/* hero */
+.hero{background:var(--basilic);color:#fff;border-radius:28px;padding:56px 28px;display:grid;gap:22px;justify-items:center;text-align:center;position:relative;overflow:hidden}
+.hero .tag{font-family:"Bricolage Grotesque";font-weight:700;font-size:clamp(20px,3.4vw,30px);color:var(--citron)}
+.hero p{max-width:620px;opacity:.92}
+.blob{position:absolute;border-radius:50%;opacity:.18}
+/* wordmark */
+.wm{font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(46px,9vw,92px);line-height:1;display:inline-flex;align-items:center;gap:.08em;letter-spacing:-.04em}
+.wm .s{color:var(--pousse)} .wm .p{color:#fff}
+.wm.dark .s{color:var(--basilic)} .wm.dark .p{color:var(--encre)}
+.wm.mono .s,.wm.mono .p{color:#fff}
+/* palette */
+.sw{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.sw .c{height:110px}
+.sw .t{padding:12px 14px} .sw b{display:block;font-family:"Bricolage Grotesque"} .sw code{font-size:13px;color:var(--muted)}
+.sw small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+/* type */
+.typeA{font-family:"Bricolage Grotesque";font-weight:800;font-size:44px;line-height:1.05}
+.typeB{font-size:17px;margin-top:10px}
+/* voice */
+.quote{border-left:4px solid var(--tomate);padding:6px 0 6px 14px;margin-top:10px;font-style:italic}
+ul.dl{list-style:none;display:grid;gap:8px;margin-top:10px}
+ul.dl li{padding-left:26px;position:relative}
+ul.dl li::before{content:"";position:absolute;left:0;top:7px;width:14px;height:14px;border-radius:50%;background:var(--pousse)}
+ul.dl.no li::before{background:var(--tomate)}
+/* mockups */
+.insta{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.insta .top{display:flex;align-items:center;gap:8px;padding:10px 12px;font-weight:700;font-size:14px}
+.insta .img{aspect-ratio:1/1;background:var(--citron);position:relative;padding:22px;display:flex;flex-direction:column;justify-content:space-between;color:var(--encre)}
+.insta .big{font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(28px,4.4vw,40px);line-height:1}
+.chip{display:inline-block;background:var(--encre);color:#fff;border-radius:999px;padding:6px 12px;font-weight:700;font-size:13px}
+.insta .cap{padding:12px;font-size:14px}
+.bcard{aspect-ratio:1.75/1;border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.mock-label{font-size:13px;color:var(--muted);margin-top:8px;text-align:center}
+.stage{background:#EFE6D7;border-radius:18px;display:grid;place-items:center;padding:24px;min-height:300px}
+:root[data-theme="dark"] .stage{background:#232C27}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stage{background:#232C27}}
+footer{margin-top:60px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- symbole réutilisable -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="icon" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8"/>
+      <g stroke="currentColor" stroke-width="5" stroke-linecap="round">
+        <line x1="50" y1="14" x2="50" y2="22"/><line x1="86" y1="50" x2="78" y2="50"/>
+        <line x1="50" y1="86" x2="50" y2="78"/><line x1="14" y1="50" x2="22" y2="50"/>
+      </g>
+      <!-- feuille = aiguille pointée sur 20 min -->
+      <g transform="rotate(120 50 50)">
+        <path d="M50 52 C 38 40, 40 24, 50 16 C 60 24, 62 40, 50 52 Z" fill="var(--leaf,#A7D46F)"/>
+        <line x1="50" y1="50" x2="50" y2="24" stroke="var(--vein,#2E7D55)" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <circle cx="50" cy="50" r="6" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<section class="hero">
+  <span class="blob" style="width:260px;height:260px;background:var(--citron);top:-90px;left:-70px"></span>
+  <span class="blob" style="width:200px;height:200px;background:var(--pousse);bottom:-80px;right:-40px"></span>
+  <span class="eyebrow" style="color:#fff;opacity:.8">Équipe 3 · Univers C · Identité de marque</span>
+  <div class="wm"><svg width="0.9em" height="0.9em" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span><span class="p">plement</span></span></div>
+  <div class="tag">Manger sain, c'est sainplement facile.</div>
+  <p>Cours de cuisine healthy à domicile pour les 20-40 ans. Une recette saine, 5 ingrédients maximum, prête en 20 minutes. On casse l'idée que manger sain, c'est compliqué.</p>
+</section>
+
+<h2>Le concept</h2>
+<p class="sub">Le nom fusionne <b>sain</b> et <b>simplement</b> : il dit la promesse à lui tout seul. Le logo est une assiette vue du dessus qui sert aussi de minuteur. Son aiguille est une feuille pointée sur <b>20 minutes</b> : sain + rapide en un seul symbole.</p>
+<div class="grid g3">
+  <div class="card"><div class="eyebrow">Promesse</div><h3 style="margin-top:6px">Sain, simple, rapide</h3><p class="sub" style="margin:6px 0 0">20 min, 5 ingrédients, zéro prise de tête.</p></div>
+  <div class="card"><div class="eyebrow">Cible</div><h3 style="margin-top:6px">Les 20-40 ans pressés</h3><p class="sub" style="margin:6px 0 0">Étudiants, jeunes actifs, colocs, jeunes couples.</p></div>
+  <div class="card"><div class="eyebrow">Personnalité</div><h3 style="margin-top:6px">La pote qui cuisine bien</h3><p class="sub" style="margin:6px 0 0">Complice, positive, jamais moralisatrice.</p></div>
+</div>
+
+<h2>Le logo</h2>
+<p class="sub">« sain » en vert, « plement » en encre : on lit le jeu de mots immédiatement. Le symbole seul sert d'avatar Instagram, de tampon et de motif.</p>
+<div class="grid g3">
+  <div class="card" style="display:grid;place-items:center;min-height:180px;background:#FFF8EE">
+    <div class="wm dark" style="font-size:44px"><svg width="0.9em" height="0.9em" style="color:#1D2621;--leaf:#2E7D55;--vein:#FFF8EE"><use href="#icon"/></svg><span><span class="s">sain</span><span class="p">plement</span></span></div>
+  </div>
+  <div class="card" style="display:grid;place-items:center;min-height:180px;background:#2E7D55;border-color:#2E7D55">
+    <div class="wm" style="font-size:44px"><svg width="0.9em" height="0.9em" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span><span class="p">plement</span></span></div>
+  </div>
+  <div class="card" style="display:flex;gap:18px;justify-content:center;align-items:center;min-height:180px">
+    <div style="width:84px;height:84px;border-radius:50%;background:#FFD24A;display:grid;place-items:center"><svg width="56" height="56" style="color:#1D2621;--leaf:#2E7D55;--vein:#FFD24A"><use href="#icon"/></svg></div>
+    <div style="width:84px;height:84px;border-radius:50%;background:#1D2621;display:grid;place-items:center"><svg width="56" height="56" style="color:#fff;--leaf:#A7D46F;--vein:#1D2621"><use href="#icon"/></svg></div>
+  </div>
+</div>
+
+<h2>Les couleurs</h2>
+<p class="sub">Une base verte et naturelle pour le healthy et le responsable, avec du citron et de la tomate pour l'énergie et le côté fun des 20-40 ans.</p>
+<div class="grid g3" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+  <div class="sw"><div class="c" style="background:#2E7D55"></div><div class="t"><b>Basilic</b><code>#2E7D55</code><small>Couleur principale</small></div></div>
+  <div class="sw"><div class="c" style="background:#A7D46F"></div><div class="t"><b>Pousse</b><code>#A7D46F</code><small>Fraîcheur, feuille</small></div></div>
+  <div class="sw"><div class="c" style="background:#FFD24A"></div><div class="t"><b>Citron</b><code>#FFD24A</code><small>Énergie, posts</small></div></div>
+  <div class="sw"><div class="c" style="background:#F25C3B"></div><div class="t"><b>Tomate</b><code>#F25C3B</code><small>Accent, boutons</small></div></div>
+  <div class="sw"><div class="c" style="background:#FFF8EE"></div><div class="t"><b>Crème</b><code>#FFF8EE</code><small>Fond</small></div></div>
+  <div class="sw"><div class="c" style="background:#1D2621"></div><div class="t"><b>Encre</b><code>#1D2621</code><small>Texte</small></div></div>
+</div>
+
+<h2>Les typographies</h2>
+<div class="grid g2">
+  <div class="card"><div class="eyebrow">Titres · Bricolage Grotesque ExtraBold</div><div class="typeA" style="margin-top:10px">Ton bowl healthy en 20 min.</div></div>
+  <div class="card"><div class="eyebrow">Textes · DM Sans</div><p class="typeB">Alice arrive chez toi à vélo avec ses épices. Vous cuisinez ensemble une recette saine, 5 ingrédients maximum, et tu repars avec les astuces pour la refaire toute la semaine.</p></div>
+</div>
+
+<h2>Le ton de voix</h2>
+<p class="sub">On tutoie, on est complice et positif. On parle de plaisir avant de parler de santé.</p>
+<div class="grid g2">
+  <div class="card">
+    <div class="eyebrow">Exemples</div>
+    <div class="quote">Post : « Pas le temps ? 20 minutes. Pas d'idée ? 5 ingrédients. Pas d'excuse. 🌱 »</div>
+    <div class="quote">Recrutement : « Tu sais rendre une courgette sexy en 20 minutes ? On t'attend. »</div>
+    <div class="quote">Radio : « *tic-tac* … *ding !* C'est prêt. Manger sain, c'est sainplement facile. Sainplement, cours de cuisine healthy chez toi. »</div>
+  </div>
+  <div class="card">
+    <div class="eyebrow">On fait</div>
+    <ul class="dl"><li>Des phrases courtes, des chiffres concrets (20 min, 5 ingrédients)</li><li>De l'humour et des emojis avec modération 🌱⏱️</li><li>Montrer de vrais plats, des vraies cuisines</li></ul>
+    <div class="eyebrow" style="margin-top:18px">On évite</div>
+    <ul class="dl no"><li>Le vocabulaire « régime », « calories », « culpabilité »</li><li>Le jargon de chef</li><li>Les photos froides de banque d'images</li></ul>
+  </div>
+</div>
+
+<h2>Les déclinaisons</h2>
+<div class="grid g3">
+  <div>
+    <div class="insta">
+      <div class="top"><span style="width:28px;height:28px;border-radius:50%;background:#2E7D55;display:grid;place-items:center"><svg width="20" height="20" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg></span>sainplement</div>
+      <div class="img">
+        <span class="chip">⏱️ 20 min · 5 ingrédients</span>
+        <div class="big">Le bowl<br>du lundi<br>sans galère.</div>
+        <svg width="70" height="70" style="position:absolute;right:18px;bottom:18px;color:#1D2621;--leaf:#2E7D55;--vein:#FFD24A"><use href="#icon"/></svg>
+      </div>
+      <div class="cap"><b>sainplement</b> Quinoa, pois chiches, avocat, citron, cumin. C'est tout. 🌱 #MangerSainCestSainplement</div>
+    </div>
+    <div class="mock-label">Post Instagram</div>
+  </div>
+  <div>
+    <div class="stage" style="gap:14px">
+      <div class="bcard" style="background:#2E7D55;color:#fff;width:100%;max-width:300px">
+        <div class="wm" style="font-size:26px"><svg width="0.9em" height="0.9em" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span><span class="p">plement</span></span></div>
+        <div style="font-size:13px"><b style="font-size:15px">Alice</b><br>Coach cuisine healthy à domicile<br>06 00 00 00 00 · hello@sainplement.fr</div>
+      </div>
+    </div>
+    <div class="mock-label">Carte de visite</div>
+  </div>
+  <div>
+    <div class="stage">
+      <svg viewBox="0 0 200 230" width="170" aria-label="Pot d'épices">
+        <rect x="55" y="14" width="90" height="26" rx="6" fill="#F25C3B"/>
+        <rect x="45" y="40" width="110" height="170" rx="22" fill="#FFF8EE" stroke="#1D2621" stroke-width="3"/>
+        <rect x="45" y="150" width="110" height="60" rx="0" fill="#E8A33D" opacity=".85"/>
+        <path d="M45 150 h110 v38 a22 22 0 0 1 -22 22 h-66 a22 22 0 0 1 -22 -22z" fill="#C97A2B"/>
+        <rect x="58" y="70" width="84" height="64" rx="10" fill="#2E7D55"/>
+        <use href="#icon" x="82" y="76" width="36" height="36" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"/>
+        <text x="100" y="126" text-anchor="middle" font-family="Bricolage Grotesque" font-weight="800" font-size="12" fill="#fff">Curry doux</text>
+      </svg>
+    </div>
+    <div class="mock-label">Pot d'épices offert à chaque cours</div>
+  </div>
+  <div>
+    <div class="stage">
+      <svg viewBox="0 0 200 230" width="170" aria-label="Tablier">
+        <path d="M70 10 h60 v40 l40 20 v150 h-140 v-150 l40 -20z" fill="#2E7D55"/>
+        <path d="M70 10 q30 -20 60 0" fill="none" stroke="#1D2621" stroke-width="4"/>
+        <rect x="70" y="150" width="60" height="44" rx="6" fill="#256845"/>
+        <use href="#icon" x="80" y="80" width="40" height="40" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"/>
+        <text x="100" y="138" text-anchor="middle" font-family="Bricolage Grotesque" font-weight="800" font-size="16" fill="#fff">sainplement</text>
+      </svg>
+    </div>
+    <div class="mock-label">Tablier d'Alice</div>
+  </div>
+  <div>
+    <div class="stage">
+      <svg viewBox="0 0 220 160" width="200" aria-label="Vélo">
+        <circle cx="50" cy="115" r="34" fill="none" stroke="#1D2621" stroke-width="6"/>
+        <circle cx="170" cy="115" r="34" fill="none" stroke="#1D2621" stroke-width="6"/>
+        <path d="M50 115 L95 60 L150 60 L170 115 M95 60 L115 115 L150 60 M115 115 L50 115" fill="none" stroke="#2E7D55" stroke-width="6" stroke-linejoin="round"/>
+        <rect x="130" y="22" width="60" height="40" rx="6" fill="#FFD24A" stroke="#1D2621" stroke-width="3"/>
+        <use href="#icon" x="145" y="27" width="30" height="30" style="color:#1D2621;--leaf:#2E7D55;--vein:#FFD24A"/>
+      </svg>
+    </div>
+    <div class="mock-label">Le vélo d'Alice et sa caisse</div>
+  </div>
+  <div>
+    <div class="stage" style="background:#FFD24A">
+      <div style="text-align:center;color:#1D2621">
+        <div class="eyebrow" style="color:#1D2621">J2 · J3</div>
+        <div class="disp" style="font-weight:800;font-size:30px;line-height:1.05;margin:8px 0">Sainplement <span style="color:#2E7D55">Box</span><br>Sainplement <span style="color:#F25C3B">Club</span></div>
+        <div style="font-size:14px;max-width:220px;margin:auto">Box = kits 5 ingrédients (J3).<br>Club = cours collectifs (J2).</div>
+      </div>
+    </div>
+    <div class="mock-label">Extensions de marque</div>
+  </div>
+</div>
+
+<footer>Sainplement · Équipe 3 · Business Game Kuisto IDRAC B2, octobre 2026</footer>
+</div>
+</body>
+</html>
