@@ -20,3 +20,8 @@ Prévision : ~90 cours, résultat ≈ −2 000 € (dépenses ponctuelles de lan
 - 119 cours vendus (4 perdus), CA 4 403 €, 59 clients, panier 2,02, satisfaction 80,7, part de marché 10,5 %.
 - Résultat −1 025 € (dont 1 300 € de dépenses ponctuelles : matériel + média). Trésorerie 7 718 €.
 - Alice saturée : 89,3 h de cours + 29,8 h de vélo = 98,9 % d'occupation. Théo : 36 h / 40 h.
+- Trésorerie : encaissements 5 283,60 € TTC, sorties 5 565,60 €. À payer en M+1 : TVA 503 €, comptable 180 €, études 60 € (TTC).
+- Étude concurrents (janvier) : prix 30–45 € (moyenne 36,9 €), durées 45–60 min (moyenne 51,5 min). Nous : 37 € / 45 min = 0,82 €/min, 2e plus cher à la minute. Parts de marché les plus hautes : LYO11 (30 €, 11,8 %) et NIC05 (32 €, 11,7 %).
+
+## T2 – Février (recommandé)
+Transports en commun · 37 € · 45 min · épices · aucun média · étude concurrents oui.
