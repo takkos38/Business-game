@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moodboard Identité Kuisto</title>
+<meta name="description" content="Trois directions d'identité graphique pour l'entreprise de cours de cuisine d'Alice : Sève, Popote, Escale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Manrope:wght@400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F4EF; --surface:#FFFFFF; --ink:#18181A; --muted:#5F5E5A; --line:#E3DFD6;
+  --chip:#EFECE5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141414; --surface:#1E1E1F; --ink:#F1EFEA; --muted:#A8A59E; --line:#2E2E30; --chip:#28282A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141414; --surface:#1E1E1F; --ink:#F1EFEA; --muted:#A8A59E; --line:#2E2E30; --chip:#28282A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.5;overflow-x:hidden}
+.wrap{max-width:1320px;margin:0 auto;padding:0 16px}
+header.top{padding:40px 0 24px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(30px,5vw,52px);line-height:1.05;margin:10px 0 12px;letter-spacing:-.01em}
+h1 em{font-style:italic;font-weight:400}
+.lead{max-width:760px;color:var(--muted);font-size:16px}
+.rules{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.rules span{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px}
+nav.jump{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.jump .wrap{display:flex;gap:8px;padding-top:10px;padding-bottom:10px;overflow-x:auto}
+nav.jump a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-size:14px;font-weight:600;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+nav.jump a i{font-style:normal;display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;vertical-align:0}
+
+.grid{display:grid;grid-template-columns:1fr;gap:24px;padding:28px 0 40px}
+@media (min-width:1080px){.grid{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- direction card ---------- */
+.dir{border-radius:22px;overflow:hidden;background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;scroll-margin-top:64px}
+.hero{padding:28px 24px 24px;position:relative}
+.tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:4px 10px;border-radius:999px}
+.logo-row{display:flex;align-items:center;gap:16px;margin:22px 0 14px}
+.logo-row svg{flex:0 0 auto}
+.wordmark{font-size:52px;line-height:1}
+.baseline{font-size:19px;margin-top:4px}
+.alts{font-size:13px;margin-top:14px;opacity:.85}
+.alts b{font-weight:700}
+.body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:22px;flex:1}
+.label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:10px}
+.story{font-size:14.5px;color:var(--ink)}
+
+.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.sw{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}
+.sw .dot{width:100%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(0,0,0,.08);max-width:62px}
+.sw b{font-size:11.5px;line-height:1.15}
+.sw code{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:var(--muted)}
+.sw small{font-size:10px;color:var(--muted);line-height:1.2}
+
+.type{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--bg)}
+.type .big{font-size:34px;line-height:1.05}
+.type .txt{font-size:14px;margin-top:8px;color:var(--ink)}
+.type .meta{font-size:11.5px;color:var(--muted);margin-top:10px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+
+.mocks{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:560px) and (max-width:1079px){.mocks{grid-template-columns:1fr 1fr}}
+.mock-cap{font-size:11.5px;color:var(--muted);margin-top:6px;text-align:center}
+
+/* business card */
+.card{aspect-ratio:85/55;border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 24px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.06);position:relative;overflow:hidden}
+.card .who{font-size:15px;font-weight:700}
+.card .role{font-size:11px;opacity:.8}
+.card .contact{font-size:10.5px;line-height:1.5;opacity:.9}
+
+/* insta post */
+.post{border-radius:14px;overflow:hidden;background:#fff;color:#111;box-shadow:0 10px 24px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.06);font-family:"DM Sans",sans-serif}
+.post .ph{display:flex;align-items:center;gap:8px;padding:9px 11px;font-size:12px;font-weight:700}
+.post .ph .av{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;overflow:hidden}
+.post .img{aspect-ratio:1;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:18px}
+.post .cap{padding:9px 11px 12px;font-size:12px;line-height:1.4}
+.post .cap b{font-weight:700}
+
+.uses{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.uses div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:12.5px}
+.uses div b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.voice{font-size:13.5px;border-left:3px solid;padding:2px 0 2px 12px;font-style:italic}
+
+/* ---------- A : SEVE ---------- */
+.A{--c1:#2F5D46;--c2:#F4EFE6;--c3:#A8B89A;--c4:#C9744A;--c5:#1E2A24}
+.A .hero{background:var(--c2);color:var(--c5)}
+.A .tag{background:var(--c1);color:var(--c2)}
+.A .wordmark{font-family:"Fraunces",serif;font-weight:600;color:var(--c1);letter-spacing:-.02em}
+.A .baseline{font-family:"Fraunces",serif;font-style:italic;color:var(--c1)}
+.A .type .big{font-family:"Fraunces",serif;font-weight:600;color:var(--c1)}
+.A .type .big em{font-weight:400;color:var(--c4)}
+.A .type .txt{font-family:"DM Sans",sans-serif}
+.A .voice{border-color:var(--c1)}
+
+/* ---------- B : POPOTE ---------- */
+.B{--c1:#FF5A36;--c2:#FFC23C;--c3:#2346D9;--c4:#FFF6E9;--c5:#1A1A1A}
+.B .hero{background:var(--c4);color:var(--c5);
+  background-image:linear-gradient(90deg,rgba(35,70,217,.08) 50%,transparent 50%),linear-gradient(rgba(35,70,217,.08) 50%,transparent 50%);
+  background-size:28px 28px}
+.B .tag{background:var(--c5);color:var(--c2)}
+.B .wordmark{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:var(--c5);letter-spacing:-.04em}
+.B .baseline{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:var(--c1)}
+.B .baseline span{background:var(--c2);padding:0 6px;border-radius:4px;color:var(--c5)}
+.B .type .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:var(--c1);letter-spacing:-.03em}
+.B .type .txt{font-family:"Nunito",sans-serif}
+.B .voice{border-color:var(--c1)}
+
+/* ---------- C : ESCALE ---------- */
+.C{--c1:#14213D;--c2:#E8A33D;--c3:#B23A2E;--c4:#5E8C6A;--c5:#EFE3CF}
+.C .hero{background:var(--c1);color:var(--c5)}
+.C .tag{background:var(--c2);color:var(--c1)}
+.C .wordmark{font-family:"DM Serif Display",serif;color:var(--c5);letter-spacing:.16em;font-size:44px}
+.C .baseline{font-family:"DM Serif Display",serif;font-style:italic;color:var(--c2)}
+.C .rule{height:0;border-top:2px dashed var(--c2);width:120px;margin-top:8px;opacity:.9}
+.C .type .big{font-family:"DM Serif Display",serif;color:var(--c1)}
+.C .type .big em{color:var(--c3)}
+.C .type .txt{font-family:"Manrope",sans-serif}
+.C .voice{border-color:var(--c2)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .C .type .big{color:var(--c5)}
+  :root:not([data-theme="light"]) .A .type .big{color:var(--c3)}
+}
+:root[data-theme="dark"] .C .type .big{color:var(--c5)}
+:root[data-theme="dark"] .A .type .big{color:var(--c3)}
+
+/* ---------- comparison ---------- */
+section.compare{padding:8px 0 56px}
+h2{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(24px,3.4vw,34px);margin-bottom:6px}
+.compare p.sub{color:var(--muted);margin-bottom:18px;font-size:15px}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:14px}
+.tbl th,.tbl td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl thead th{font-size:13px;background:var(--chip)}
+.tbl td:first-child{font-weight:700;color:var(--muted);font-size:12px;letter-spacing:.06em;text-transform:uppercase;width:20%}
+.stars{letter-spacing:2px}
+.tblwrap{overflow-x:auto;border-radius:16px}
+@media (max-width:640px){
+  .tbl thead{display:none}
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+  .tbl tr{border-bottom:1px solid var(--line);padding:6px 0}
+  .tbl td{border:none;padding:6px 14px}
+  .tbl td:first-child{width:100%;padding-top:12px}
+  .tbl td[data-k]::before{content:attr(data-k) " : ";font-weight:700}
+}
+.reco{display:grid;grid-template-columns:1fr;gap:12px;margin-top:20px}
+@media (min-width:800px){.reco{grid-template-columns:repeat(3,1fr)}}
+.reco div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+.reco div b{display:block;margin-bottom:4px}
+footer{color:var(--muted);font-size:12.5px;padding:0 0 40px}
+</style>
+</head>
+<body>
+
+<header class="top wrap">
+  <div class="eyebrow">Business Game Kuisto · IDRAC B2 · J1, atelier identité graphique</div>
+  <h1>Trois façons de raconter <em>la cuisine d'Alice</em></h1>
+  <p class="lead">Une direction par positionnement possible. Chaque marque est pensée pour durer du cours à domicile (J1) aux cours collectifs (J2), puis à la vente d'épices et de kits (J3). Tous les noms passent le test radio : on les entend une fois et on sait les écrire.</p>
+  <div class="rules"><span>Pas de toque</span><span>Pas de fourchette</span><span>Prononçable à la radio</span><span>Déclinable en pot d'épices</span></div>
+</header>
+
+<nav class="jump" aria-label="Directions">
+  <div class="wrap">
+    <a href="#A"><i style="background:#2F5D46"></i>A · Sève</a>
+    <a href="#B"><i style="background:#FF5A36"></i>B · Popote</a>
+    <a href="#C"><i style="background:#E8A33D"></i>C · Escale</a>
+    <a href="#compare">Comparer</a>
+  </div>
+</nav>
+
+<main class="wrap">
+<div class="grid">
+
+<!-- ===================== A : SEVE ===================== -->
+<article class="dir A" id="A">
+  <div class="hero">
+    <span class="tag">A · Healthy &amp; responsable premium</span>
+    <div class="logo-row">
+      <svg width="64" height="78" viewBox="0 0 100 120" aria-label="Logo Sève : goutte-feuille et cuillère">
+        <path d="M50 4 C70 30 90 54 90 78 A40 40 0 0 1 10 78 C10 54 30 30 50 4 Z" fill="#2F5D46"/>
+        <line x1="50" y1="24" x2="50" y2="80" stroke="#F4EFE6" stroke-width="4.5" stroke-linecap="round"/>
+        <ellipse cx="50" cy="92" rx="8.5" ry="11" fill="#F4EFE6"/>
+        <path d="M50 46 L36 36 M50 62 L66 52" stroke="#A8B89A" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="wordmark">sève</div>
+        <div class="baseline">Cuisinez vivant.</div>
+      </div>
+    </div>
+    <div class="alts"><b>Autres noms :</b> Racines · Pousse &nbsp;|&nbsp; <b>Autres baselines :</b> « La cuisine qui fait du bien, chez vous. » · « Du marché à votre assiette, sans détour. »</div>
+  </div>
+  <div class="body">
+    <div>
+      <div class="label">Concept</div>
+      <p class="story">La sève nourrit, relie et fait pousser. Alice vient transmettre chez vous une cuisine vivante : de saison, locale, sans gaspillage. Chaque cours plante une habitude saine qui reste après son départ.</p>
+    </div>
+    <div>
+      <div class="label">Palette</div>
+      <div class="palette">
+        <div class="sw"><span class="dot" style="background:#2F5D46"></span><b>Vert Sève</b><code>#2F5D46</code><small>Principale</small></div>
+        <div class="sw"><span class="dot" style="background:#F4EFE6"></span><b>Lin</b><code>#F4EFE6</code><small>Fond</small></div>
+        <div class="sw"><span class="dot" style="background:#A8B89A"></span><b>Sauge</b><code>#A8B89A</code><small>Secondaire</small></div>
+        <div class="sw"><span class="dot" style="background:#C9744A"></span><b>Terre cuite</b><code>#C9744A</code><small>Accent / CTA</small></div>
+        <div class="sw"><span class="dot" style="background:#1E2A24"></span><b>Humus</b><code>#1E2A24</code><small>Texte</small></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Typographie</div>
+      <div class="type">
+        <div class="big">Le velouté <em>de saison</em></div>
+        <div class="txt">Courge rôtie, cumin, graines torréfiées. 45 minutes, zéro déchet, et le plaisir avant tout.</div>
+        <div class="meta"><span>Titre : Fraunces 600 / italique</span><span>Texte : DM Sans</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Maquettes</div>
+      <div class="mocks">
+        <div>
+          <div class="card" style="background:#2F5D46;color:#F4EFE6">
+            <svg width="120" height="144" viewBox="0 0 100 120" style="position:absolute;right:-22px;top:-14px;opacity:.13" aria-hidden="true"><path d="M50 4 C70 30 90 54 90 78 A40 40 0 0 1 10 78 C10 54 30 30 50 4 Z" fill="#F4EFE6"/></svg>
+            <div style="font-family:Fraunces,serif;font-size:26px;font-weight:600;letter-spacing:-.02em">sève</div>
+            <div>
+              <div class="who" style="font-family:Fraunces,serif">Alice [Nom]</div>
+              <div class="role">Cheffe à domicile · cuisine healthy &amp; de saison</div>
+            </div>
+            <div class="contact">06 00 00 00 00 · bonjour@seve.fr<br><span style="color:#C9744A;font-weight:700;background:#F4EFE6;padding:1px 6px;border-radius:4px">Cuisinez vivant.</span></div>
+          </div>
+          <div class="mock-cap">Carte de visite, papier recyclé 350 g</div>
+        </div>
+        <div>
+          <div class="post">
+            <div class="ph"><span class="av" style="background:#2F5D46"><svg width="14" height="17" viewBox="0 0 100 120"><path d="M50 4 C70 30 90 54 90 78 A40 40 0 0 1 10 78 C10 54 30 30 50 4 Z" fill="#F4EFE6"/></svg></span>seve.cuisine</div>
+            <div class="img" style="background:#A8B89A">
+              <svg viewBox="0 0 200 200" style="position:absolute;inset:0;width:100%;height:100%" aria-hidden="true">
+                <circle cx="132" cy="78" r="52" fill="#C9744A"/>
+                <path d="M132 26 q10 -16 24 -14 q-6 14 -24 14z" fill="#2F5D46"/>
+                <path d="M100 78 q32 20 64 0 M108 56 q24 12 48 0 M108 100 q24 -12 48 0" stroke="#F4EFE6" stroke-width="2" fill="none" opacity=".5"/>
+              </svg>
+              <div style="position:relative;font-family:Fraunces,serif;color:#1E2A24">
+                <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-family:'DM Sans'">Le légume du mois</div>
+                <div style="font-size:30px;font-weight:600;line-height:1;font-style:italic">La courge</div>
+              </div>
+            </div>
+            <div class="cap"><b>seve.cuisine</b> Octobre, la courge est là. Velouté rôti au cumin en 45 min, zéro déchet. On cuisine vivant ?</div>
+          </div>
+          <div class="mock-cap">Post Instagram</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Déclinaisons</div>
+      <div class="uses">
+        <div><b>Tablier</b>Lin vert sève, symbole brodé, « Cuisinez vivant. » au dos</div>
+        <div><b>Pot cadeau</b>Bocal consigné, liège, étiquette kraft + QR recette</div>
+        <div><b>Vélo cargo</b>« 0 g de CO₂ pour venir chez vous »</div>
+        <div><b>Story</b>Fond sauge, « Le légume du mois », sondage</div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Ton de voix (radio)</div>
+      <p class="voice">« Et si ce soir, la cuisine venait à vous ? Avec Sève, Alice vous apprend à cuisiner sain, de saison, chez vous. Sève, cuisine vivante. »</p>
+    </div>
+  </div>
+</article>
+
+<!-- ===================== B : POPOTE ===================== -->
+<article class="dir B" id="B">
+  <div class="hero">
+    <span class="tag">B · Accessible, convivial, volume</span>
+    <div class="logo-row">
+      <svg width="82" height="76" viewBox="0 0 120 110" aria-label="Logo Popote : casserole souriante">
+        <path d="M46 22 c-6 -6 6 -10 0 -18" stroke="#1A1A1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M74 22 c-6 -6 6 -10 0 -18" stroke="#1A1A1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M60 24 l-6 -6 a4 4 0 0 1 6 -5 a4 4 0 0 1 6 5 z" fill="#FF5A36" stroke="#1A1A1A" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="4" y="58" width="22" height="12" rx="6" fill="#FFC23C" stroke="#1A1A1A" stroke-width="4"/>
+        <rect x="94" y="58" width="22" height="12" rx="6" fill="#FFC23C" stroke="#1A1A1A" stroke-width="4"/>
+        <rect x="20" y="48" width="80" height="54" rx="18" fill="#FF5A36" stroke="#1A1A1A" stroke-width="4"/>
+        <path d="M16 48 Q60 22 104 48 Z" fill="#2346D9" stroke="#1A1A1A" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="60" cy="31" r="5" fill="#FFC23C" stroke="#1A1A1A" stroke-width="3.5"/>
+        <path d="M40 68 q6 -7 12 0 M68 68 q6 -7 12 0" stroke="#1A1A1A" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M46 80 q14 14 28 0" stroke="#1A1A1A" stroke-width="4" fill="#FFF6E9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <div class="wordmark">popote</div>
+        <div class="baseline"><span>Tous en popote !</span></div>
+      </div>
+    </div>
+    <div class="alts"><b>Autres noms :</b> Ça Mijote ! · Miam Miam Club &nbsp;|&nbsp; <b>Autres baselines :</b> « La cuisine, c'est pas sorcier. » · « On cuisine chez vous, on rit ensemble. »</div>
+  </div>
+  <div class="body">
+    <div>
+      <div class="label">Concept</div>
+      <p class="story">La popote, c'est la cuisine de tous les jours, celle qu'on fait pour ceux qu'on aime, sans chichis. Alice débarque avec son énergie et ses astuces. En 45 minutes, vous épatez vos potes. On apprend en riant et on goûte toujours ensemble.</p>
+    </div>
+    <div>
+      <div class="label">Palette</div>
+      <div class="palette">
+        <div class="sw"><span class="dot" style="background:#FF5A36"></span><b>Tomate</b><code>#FF5A36</code><small>Principale</small></div>
+        <div class="sw"><span class="dot" style="background:#FFC23C"></span><b>Moutarde</b><code>#FFC23C</code><small>Stickers / promos</small></div>
+        <div class="sw"><span class="dot" style="background:#2346D9"></span><b>Bleu Torchon</b><code>#2346D9</code><small>Vichy / boutons</small></div>
+        <div class="sw"><span class="dot" style="background:#FFF6E9"></span><b>Crème</b><code>#FFF6E9</code><small>Fond</small></div>
+        <div class="sw"><span class="dot" style="background:#1A1A1A"></span><b>Réglisse</b><code>#1A1A1A</code><small>Texte / contours</small></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Typographie</div>
+      <div class="type">
+        <div class="big">Pâtes crémeuses, 30 min chrono !</div>
+        <div class="txt">Sans crème, sans stress et pour moins de 3 € la part. Tag le pote qui vit de pizzas surgelées.</div>
+        <div class="meta"><span>Titre : Bricolage Grotesque 800</span><span>Texte : Nunito</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Maquettes</div>
+      <div class="mocks">
+        <div>
+          <div class="card" style="background:#FFF6E9;color:#1A1A1A;border:3px solid #1A1A1A">
+            <div style="position:absolute;right:0;top:0;bottom:0;width:34%;background-color:#fff;background-image:linear-gradient(90deg,rgba(35,70,217,.55) 50%,transparent 50%),linear-gradient(rgba(35,70,217,.55) 50%,transparent 50%);background-size:14px 14px;border-left:3px solid #1A1A1A"></div>
+            <div style="font-family:'Bricolage Grotesque';font-weight:800;font-size:26px;letter-spacing:-.04em;position:relative">popote</div>
+            <div style="position:relative">
+              <div class="who" style="font-family:'Bricolage Grotesque';font-weight:800">Alice [Nom]</div>
+              <div class="role" style="font-family:Nunito">Ta coach cuisine, à domicile</div>
+            </div>
+            <div class="contact" style="font-family:Nunito;position:relative">06 00 00 00 00 · salut@popote.fr<br><b style="background:#FFC23C;padding:1px 6px;border-radius:4px">Tous en popote !</b></div>
+          </div>
+          <div class="mock-cap">Carte de visite, coins arrondis</div>
+        </div>
+        <div>
+          <div class="post">
+            <div class="ph"><span class="av" style="background:#FF5A36;border:2px solid #1A1A1A"><span style="font:800 10px 'Bricolage Grotesque';color:#fff">po</span></span>popote.cuisine</div>
+            <div class="img" style="background:#FF5A36">
+              <div style="position:absolute;top:14px;right:14px;transform:rotate(8deg);background:#FFC23C;border:3px solid #1A1A1A;border-radius:50%;width:76px;height:76px;display:grid;place-items:center;text-align:center;font:800 13px/1.05 'Bricolage Grotesque';color:#1A1A1A">DÉFI<br>15 MIN</div>
+              <div style="position:relative;font-family:'Bricolage Grotesque';font-weight:800;color:#FFF6E9;line-height:.95">
+                <div style="font-size:32px;letter-spacing:-.03em">Tu sais pas<br>cuisiner ?</div>
+                <div style="font-size:16px;margin-top:8px;display:inline-block;background:#2346D9;padding:4px 10px;border-radius:999px;border:2px solid #1A1A1A">Spoiler : si.</div>
+              </div>
+            </div>
+            <div class="cap" style="font-family:Nunito"><b>popote.cuisine</b> Cette semaine : pâtes crémeuses sans crème, moins de 3 € la part 🍝 Tag ton pote !</div>
+          </div>
+          <div class="mock-cap">Post Instagram</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Déclinaisons</div>
+      <div class="uses">
+        <div><b>Tablier</b>Vichy bleu, poche tomate, prénom brodé au 5e cours</div>
+        <div><b>Pot cadeau</b>Boîte métal moutarde, « Curry Bisou », ticket recette</div>
+        <div><b>Voiture</b>Citadine tomate, casserole géante sur la portière</div>
+        <div><b>Story</b>Fond vichy, compte à rebours, quiz prix</div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Ton de voix (radio)</div>
+      <p class="voice">« Toi aussi, tu manges des pâtes au beurre trois fois par semaine ? Appelle Popote ! En 45 minutes, tu deviens le chef de ta coloc. Tous en popote ! »</p>
+    </div>
+  </div>
+</article>
+
+<!-- ===================== C : ESCALE ===================== -->
+<article class="dir C" id="C">
+  <div class="hero">
+    <span class="tag">C · Gastronomie &amp; cuisine du monde</span>
+    <div class="logo-row">
+      <svg width="84" height="84" viewBox="0 0 120 120" aria-label="Logo Escale : badiane rose des vents dans un tampon">
+        <defs><path id="ringC" d="M60 60 m-49 0 a49 49 0 1 1 98 0 a49 49 0 1 1 -98 0"/></defs>
+        <circle cx="60" cy="60" r="57" fill="none" stroke="#E8A33D" stroke-width="2.5"/>
+        <circle cx="60" cy="60" r="41" fill="none" stroke="#E8A33D" stroke-width="1.5"/>
+        <text font-family="Manrope,sans-serif" font-size="9.5" font-weight="700" letter-spacing="4.2" fill="#E8A33D"><textPath href="#ringC">ESCALE · CUISINE DU MONDE ·</textPath></text>
+        <g transform="translate(60 60) scale(.82) translate(-60 -60)">
+          <polygon points="60.0,20.0 63.4,51.7 81.2,38.8 68.3,56.6 90.0,60.0 68.3,63.4 81.2,81.2 63.4,68.3 60.0,90.0 56.6,68.3 38.8,81.2 51.7,63.4 30.0,60.0 51.7,56.6 38.8,38.8 56.6,51.7" fill="#E8A33D" stroke="#E8A33D" stroke-width="3" stroke-linejoin="round"/>
+          <circle cx="60" cy="60" r="5" fill="#14213D"/>
+          <circle cx="60" cy="60" r="2" fill="#B23A2E"/>
+        </g>
+      </svg>
+      <div>
+        <div class="wordmark">ESCALE</div>
+        <div class="rule"></div>
+        <div class="baseline">Le monde s'invite à votre table.</div>
+      </div>
+    </div>
+    <div class="alts"><b>Autres noms :</b> Caravane · Atlas &nbsp;|&nbsp; <b>Autres baselines :</b> « Voyagez sans quitter votre cuisine. » · « Une escale, mille saveurs. »</div>
+  </div>
+  <div class="body">
+    <div>
+      <div class="label">Concept</div>
+      <p class="story">Chaque cours est une escale : une destination, ses épices, son histoire et un geste de chef à rapporter chez soi. Alice est votre guide. Le passeport Escale se remplit de tampons, et au bout de 5 escales, un kit d'épices est offert.</p>
+    </div>
+    <div>
+      <div class="label">Palette</div>
+      <div class="palette">
+        <div class="sw"><span class="dot" style="background:#14213D"></span><b>Nuit d'Encre</b><code>#14213D</code><small>Principale</small></div>
+        <div class="sw"><span class="dot" style="background:#E8A33D"></span><b>Safran</b><code>#E8A33D</code><small>Dorure / logo</small></div>
+        <div class="sw"><span class="dot" style="background:#B23A2E"></span><b>Paprika</b><code>#B23A2E</code><small>Tampons / CTA</small></div>
+        <div class="sw"><span class="dot" style="background:#5E8C6A"></span><b>Cardamome</b><code>#5E8C6A</code><small>Secondaire</small></div>
+        <div class="sw"><span class="dot" style="background:#EFE3CF"></span><b>Sable</b><code>#EFE3CF</code><small>Fond papier</small></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Typographie</div>
+      <div class="type">
+        <div class="big">Escale n°7 : <em>Beyrouth</em></div>
+        <div class="txt">Sumac acidulé, mélasse de grenade, pain qui gonfle dans la poêle. Le Liban sans billet d'avion.</div>
+        <div class="meta"><span>Titre : DM Serif Display</span><span>Texte : Manrope</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Maquettes</div>
+      <div class="mocks">
+        <div>
+          <div class="card" style="background:#14213D;color:#EFE3CF">
+            <svg width="130" height="130" viewBox="0 0 120 120" style="position:absolute;right:-26px;bottom:-26px;opacity:.9" aria-hidden="true">
+              <circle cx="60" cy="60" r="57" fill="none" stroke="#E8A33D" stroke-width="1.5" opacity=".6"/>
+              <polygon points="60.0,20.0 63.4,51.7 81.2,38.8 68.3,56.6 90.0,60.0 68.3,63.4 81.2,81.2 63.4,68.3 60.0,90.0 56.6,68.3 38.8,81.2 51.7,63.4 30.0,60.0 51.7,56.6 38.8,38.8 56.6,51.7" fill="#E8A33D" opacity=".85" stroke="#E8A33D" stroke-width="3" stroke-linejoin="round"/>
+            </svg>
+            <div style="font-family:'DM Serif Display';font-size:22px;letter-spacing:.16em;color:#EFE3CF">ESCALE</div>
+            <div style="position:relative">
+              <div class="who" style="font-family:'DM Serif Display';font-weight:400;font-size:17px">Alice [Nom]</div>
+              <div class="role" style="font-family:Manrope;color:#E8A33D">Guide culinaire · cuisines du monde</div>
+            </div>
+            <div class="contact" style="font-family:Manrope">06 00 00 00 00<br>bonjour@escale-cuisine.fr</div>
+          </div>
+          <div class="mock-cap">Carte de visite, dorure à chaud safran</div>
+        </div>
+        <div>
+          <div class="post">
+            <div class="ph"><span class="av" style="background:#14213D"><svg width="18" height="18" viewBox="0 0 120 120"><polygon points="60.0,20.0 63.4,51.7 81.2,38.8 68.3,56.6 90.0,60.0 68.3,63.4 81.2,81.2 63.4,68.3 60.0,90.0 56.6,68.3 38.8,81.2 51.7,63.4 30.0,60.0 51.7,56.6 38.8,38.8 56.6,51.7" fill="#E8A33D"/></svg></span>escale.cuisine</div>
+            <div class="img" style="background:#EFE3CF;color:#14213D;justify-content:space-between">
+              <div style="display:flex;justify-content:space-between;font:700 10px Manrope;letter-spacing:.14em;text-transform:uppercase;position:relative">
+                <span>Carte d'embarquement</span><span style="color:#B23A2E">N° 07</span>
+              </div>
+              <div style="position:relative">
+                <div style="font:700 10px Manrope;letter-spacing:.14em;color:#5E8C6A">DÉPART : VOTRE CUISINE</div>
+                <div style="font-family:'DM Serif Display';font-size:40px;line-height:1">Beyrouth</div>
+                <div style="border-top:2px dashed #14213D;margin:10px 0;opacity:.4"></div>
+                <div style="display:flex;justify-content:space-between;font:600 11px Manrope">
+                  <span>Jeudi · 19h</span><span>Plus que 2 places</span>
+                </div>
+              </div>
+              <div style="position:absolute;right:16px;top:44px;width:62px;height:62px;border:2.5px solid #B23A2E;border-radius:50%;display:grid;place-items:center;transform:rotate(-14deg);font:800 9px/1.1 Manrope;color:#B23A2E;text-align:center;letter-spacing:.08em">ESCALE<br>✦<br>LIBAN</div>
+            </div>
+            <div class="cap" style="font-family:Manrope"><b>escale.cuisine</b> Ce mois-ci, Alice vous emmène au Liban, sans billet d'avion. Prochain départ : votre cuisine.</div>
+          </div>
+          <div class="mock-cap">Post Instagram, format « boarding pass »</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Déclinaisons</div>
+      <div class="uses">
+        <div><b>Tablier</b>Toile nuit, sangles cuir, étoile brodée safran</div>
+        <div><b>Pot cadeau</b>Fiole ambrée, étui « billet d'avion » Départ / Arrivée</div>
+        <div><b>Voiture</b>Nuit d'encre, « Prochaine escale : chez vous »</div>
+        <div><b>Story</b>Carte d'embarquement, bouton « J'embarque »</div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Ton de voix (radio)</div>
+      <p class="voice">« Ce soir, vous partez pour Marrakech. Sans valise. Escale, des cours de cuisine du monde chez vous, avec Alice. Escale : le monde s'invite à votre table. »</p>
+    </div>
+  </div>
+</article>
+
+</div>
+
+<section class="compare" id="compare">
+  <h2>Comparer pour décider</h2>
+  <p class="sub">La bonne identité est celle qui sert notre stratégie de scoring. Choisissez d'abord le positionnement, la marque suit.</p>
+  <div class="tblwrap">
+  <table class="tbl">
+    <thead><tr><th></th><th>A · Sève</th><th>B · Popote</th><th>C · Escale</th></tr></thead>
+    <tbody>
+      <tr><td>Test radio</td><td data-k="Sève">Très bon (1 syllabe, toujours dire « Sève, cuisine vivante »)</td><td data-k="Popote">Excellent, rebondit et se retient</td><td data-k="Escale">Excellent, net et évocateur</td></tr>
+      <tr><td>Fit avec Alice</td><td data-k="Sève"><span class="stars">★★★</span> healthy, bienveillante</td><td data-k="Popote"><span class="stars">★★☆</span> dynamique, digitale</td><td data-k="Escale"><span class="stars">★★☆</span> curiosité, épices</td></tr>
+      <tr><td>Levier scoring</td><td data-k="Sève">Responsable (RSE), panier moyen</td><td data-k="Popote">Commercial (nb clients), efficacité</td><td data-k="Escale">Satisfaction, panier moyen</td></tr>
+      <tr><td>Produits J3</td><td data-k="Sève">Aromates bio, kits de saison</td><td data-k="Popote">Mélanges fun, kits « 15 min »</td><td data-k="Escale">Coffrets « Tour du monde » (le plus fort)</td></tr>
+      <tr><td>Transport</td><td data-k="Sève">Vélo cargo, en cohérence avec le RSE</td><td data-k="Popote">Voiture, pour faire plus de cours/mois</td><td data-k="Escale">Voiture, pour l'image événementielle</td></tr>
+      <tr><td>Risque</td><td data-k="Sève">Paraître cher pendant la conquête de janvier</td><td data-k="Popote">Image « low cost », RSE moins visible</td><td data-k="Escale">S'éloigne du healthy si mal dosé</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="reco">
+    <div><b style="color:#2F5D46">Priorité Responsable + Financier</b>Sève : la plus fidèle à Alice et au levier RSE du simulateur.</div>
+    <div><b style="color:#FF5A36">Priorité volume / Commercial</b>Popote : prix d'attaque, cours collectifs et spot radio très efficace.</div>
+    <div><b style="color:#B23A2E">Priorité expérience + produits</b>Escale : la plus naturellement « marque produit » pour le J3.</div>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">Équipe n° [À COMPLÉTER] · Détail complet (noms, ton de voix, déclinaisons) dans 03_identite_graphique.md</footer>
+</body>
+</html>
