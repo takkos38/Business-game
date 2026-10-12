@@ -46,5 +46,8 @@ Alice (ex-informatique, passionnée de cuisine "healthy", dynamique, à l'aise a
 ## Template "Stratégie initiale" à remplir (Word)
 Numéro d'équipe ; nom de l'entreprise ; composition (DG, DAF, RH, Marketing/Commercial) ; matrice SWOT du marché de la cuisine ; finalités et valeurs ; ordre de priorité 1-4 des profils Financier/Commercial/Responsable/Efficace ; objectifs aux tours 6 et 12 pour les indicateurs choisis dans : CA, panier moyen, satisfaction client, notoriété, coût d'acquisition client, nombre de clients, taux de marge nette, résultat, taux de rupture de stock, indice RSE, motivation moyenne de l'équipe, niveau de compétence moyen ; plan d'actions stratégique.
 
+## Notre équipe
+- Équipe 3, univers C (10 équipes concurrentes : TOU02, PAR04, NIC05, MON01, BOR01, GRE03, LYO07, NIC06, GRE07, LYO11).
+
 ## Inconnu pour l'instant
-Numéro d'équipe, noms des membres, nom de l'entreprise → laisser des placeholders [À COMPLÉTER].
+Noms des membres, nom de l'entreprise → laisser des placeholders [À COMPLÉTER].
