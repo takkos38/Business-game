@@ -34,3 +34,13 @@ Prévision : ~90 cours, résultat ≈ −2 000 € (dépenses ponctuelles de lan
 | Ordinateur portable | Imposé | 720 € (amorti 20 €/mois) | – |
 
 Temps admin de Théo : 19 h sur 30 h. Résultat estimé ≈ +365 € (135 cours).
+
+### Résultats T2 – Février
+- Classement : **1er / 10**, score mensuel 92,2, score cumulé 91,6. Financier 70 % ↑ · Commercial 90 % ↓ · Responsable 116 % ↑ · Efficace 92 % ↓.
+- 118 cours (14 perdus, taux de service 89 %), 67 clients (+13 / −5, attrition 8,5 %), panier 1,76, satisfaction 81,9.
+- Résultat du mois ≈ −180 € (site 400 € inclus) · cumul −1 205 € · trésorerie 6 867 €.
+- Alice : 88,5 h de cours + 29,5 h de trajet (2 h libres). Théo : 29 h (11 h libres).
+- Concurrents : tous passés à 50–55 min, prix moyen 37,9 €. Nous sommes les seuls à 45 min → le plus cher à la minute (0,82 €/min).
+
+## T3 – Mars (recommandé)
+Orientation Healthy · 37 € · 45 min · épices · recrutement Julien · réseaux sociaux 12 h (Théo) · flyers devis 1 · études concurrents + communication digitale · transports en commun si possible.
