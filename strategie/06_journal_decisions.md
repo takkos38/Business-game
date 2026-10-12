@@ -23,5 +23,14 @@ Prévision : ~90 cours, résultat ≈ −2 000 € (dépenses ponctuelles de lan
 - Trésorerie : encaissements 5 283,60 € TTC, sorties 5 565,60 €. À payer en M+1 : TVA 503 €, comptable 180 €, études 60 € (TTC).
 - Étude concurrents (janvier) : prix 30–45 € (moyenne 36,9 €), durées 45–60 min (moyenne 51,5 min). Nous : 37 € / 45 min = 0,82 €/min, 2e plus cher à la minute. Parts de marché les plus hautes : LYO11 (30 €, 11,8 %) et NIC05 (32 €, 11,7 %).
 
-## T2 – Février (recommandé)
-Transports en commun · 37 € · 45 min · épices · aucun média · étude concurrents oui.
+## T2 – Février (recommandé, après note de conjoncture M2)
+| Menu | Décision | Coût HT | Temps admin |
+|---|---|---|---|
+| Activité | 37 €, 45 min, épices | 2 €/cours | – |
+| Transport | Transports en commun | 50 € | – |
+| Média / flyers | Aucun (Alice saturée) | – | – |
+| Site internet | Niveau 1 (vitrine en interne) – choix définitif | 400 € comptant | 16 h |
+| Étude concurrents | Oui | 50 € (à 30 j) | 3 h |
+| Ordinateur portable | Imposé | 720 € (amorti 20 €/mois) | – |
+
+Temps admin de Théo : 19 h sur 30 h. Résultat estimé ≈ +365 € (135 cours).
