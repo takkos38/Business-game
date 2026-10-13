@@ -78,3 +78,16 @@ Domicile 38 € / **55 min** / épices / Healthy · Collectifs 17 € / 70 min /
 
 ## T7 – Juillet (recommandé)
 Domicile 38 € / 55 min / épices / **Gourmand** · Collectifs 16 € / 70 min / aromates / **Approfondissement** · Kits condiments : 3 lots (300 u.) à 14 € · accompagnement Julien 8 h · réseaux sociaux 4 h · flyers devis 1 · étude concurrents kits.
+
+### Résultats T7 – Juillet (lancement des kits condiments)
+- Classement : 1er ex aequo en cumulé (89,8, avec MON01), score mensuel 93,0. MON01 a fait 110,5 sur le mois, NIC06 106,4, LYO07 100,4.
+- Axes : Financier 84 % ↑↑ · Commercial 69 % ↓ · Responsable 116 % ↓ · Efficace 104 % ↓.
+- CA 12 390 € (cumul 52 824 €), résultat **+1 907,93 €** (record), marge 15,4 %, cumul +605,69 €. Trésorerie 5 567,50 € (+6 182 € de collectifs encaissés en août, TVA 1 595 € à payer).
+- Domicile : 91 cours (−14) à 38 €/50 min, 78 clients, attrition 17,7 %, satisfaction 66,9.
+- Collectifs : 322 participations (+8) à 16 €/70 min, 278 clients (+54/−22), satisfaction 64,8.
+- Kits : 270 vendus sur 300 achetés à 14 € (PDM 9,5 %), 30 en stock. Concurrents à 13 € = 14,1 % de PDM.
+- Satisfaction globale 65,3 (−3,5) : la baisse s'accélère le mois du lancement des kits Tastymed.
+- Alice saturée (0,2 h libre), Julien 42,9 h libres, engagement 84,8 %, accompagnement toujours à 0.
+
+## T8 – Août (recommandé, après note de conjoncture M8)
+Domicile **37 €** / **55 min** / épices / Gourmand · Collectifs 16 € / 70 min / aromates / Approfondissement · Kits : fournisseur **Tradinette** (Dijon, artisanal), 1 lot de 200 à 14 € · recrutement **Amine** (santé et nutrition sportive, 30 h, 500 € brut, arrive en septembre) · accompagnement Julien 8 h · réseaux sociaux 4 h · étude 3 h · flyers devis 1.
