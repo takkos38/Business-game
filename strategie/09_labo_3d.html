@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labo Sainplement Nord</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--basilic:#2E7D55;--pousse:#A7D46F;--citron:#FFD24A;--tomate:#F25C3B;--creme:#FFF8EE;--encre:#1D2621;--line:#E7DED0;--bg:var(--creme);--fg:var(--encre);--card:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141A17;--fg:#F3EEE5;--line:#2A332E;--card:#1C2420}}
+:root[data-theme="dark"]{--bg:#141A17;--fg:#F3EEE5;--line:#2A332E;--card:#1C2420}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,sans-serif;font-size:13px;line-height:1.4}
+.page{max-width:1100px;margin:0 auto;padding:20px 16px}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--basilic);color:#fff;border-radius:18px;padding:12px 20px}
+.wm{font-family:"Bricolage Grotesque";font-weight:800;font-size:24px;display:inline-flex;align-items:center;gap:6px;letter-spacing:-.04em}
+.wm .s{color:var(--pousse)}
+h1{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;letter-spacing:-.02em}
+.tag{color:var(--citron);font-weight:700}
+.img{margin-top:12px;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.img img{display:block;width:100%;height:auto}
+.pts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.pt{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--basilic);border-radius:12px;padding:9px 12px}
+.pt b{display:block;font-family:"Bricolage Grotesque";font-size:15px;margin-bottom:2px}
+@media (max-width:760px){.pts{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.pts{grid-template-columns:1fr}}
+@page{size:A4 landscape;margin:8mm}
+@media print{
+  :root{--bg:#FFF8EE !important;--fg:#1D2621 !important;--line:#E7DED0 !important;--card:#fff !important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{padding:0;max-width:none}
+  body{font-size:11.5px}
+  .img img{max-height:135mm;width:auto;margin:0 auto}
+  .img{background:#fff}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="icon" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8"/>
+  <g stroke="currentColor" stroke-width="5" stroke-linecap="round"><line x1="50" y1="14" x2="50" y2="22"/><line x1="86" y1="50" x2="78" y2="50"/><line x1="50" y1="86" x2="50" y2="78"/><line x1="14" y1="50" x2="22" y2="50"/></g>
+  <g transform="rotate(120 50 50)"><path d="M50 52 C 38 40, 40 24, 50 16 C 60 24, 62 40, 50 52 Z" fill="var(--leaf,#A7D46F)"/><line x1="50" y1="50" x2="50" y2="24" stroke="var(--vein,#2E7D55)" stroke-width="3" stroke-linecap="round"/></g>
+  <circle cx="50" cy="50" r="6" fill="currentColor"/>
+</symbol></defs></svg>
+<div class="page">
+  <div class="head">
+    <div class="wm"><svg width="26" height="26" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span>plement</span></div>
+    <h1>Notre labo, quartier Nord</h1>
+    <span class="tag">100 m² · ateliers collectifs healthy</span>
+  </div>
+
+  <div class="img"><img src="labo_nord_3d.jpg" alt="Vue 3D de l'agencement du labo Sainplement"></div>
+
+  <div class="pts">
+    <div class="pt"><b>6 postes face au coach</b>Disposés en U autour de l'îlot de démonstration, avec un écran pour voir chaque geste.</div>
+    <div class="pt"><b>Une cuisine pro au fond</b>3 fours, frigo, congélateur et plonge, près de la porte de livraison.</div>
+    <div class="pt"><b>On cuisine, puis on partage</b>Une grande table pour déguster ensemble ce qu'on vient de préparer.</div>
+    <div class="pt"><b>Un labo responsable</b>Mur d'aromates, épicerie en vrac, tri et compost.</div>
+  </div>
+</div>
+</body>
+</html>
