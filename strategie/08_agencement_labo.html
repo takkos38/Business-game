@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labo Sainplement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--basilic:#2E7D55;--pousse:#A7D46F;--citron:#FFD24A;--tomate:#F25C3B;--creme:#FFF8EE;--encre:#1D2621;--muted:#4F5A54;--line:#E7DED0;--bg:var(--creme);--fg:var(--encre);--card:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141A17;--fg:#F3EEE5;--muted:#A9B3AD;--line:#2A332E;--card:#1C2420}}
+:root[data-theme="dark"]{--bg:#141A17;--fg:#F3EEE5;--muted:#A9B3AD;--line:#2A332E;--card:#1C2420}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,sans-serif;font-size:12px;line-height:1.35}
+.page{max-width:1120px;margin:0 auto;padding:20px 16px}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--basilic);color:#fff;border-radius:18px;padding:12px 18px}
+.wm{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;display:inline-flex;align-items:center;gap:6px;letter-spacing:-.04em}
+.wm .s{color:var(--pousse)}
+.head h1{font-size:22px}
+.head .tag{color:var(--citron);font-weight:700}
+.grid{display:grid;grid-template-columns:1fr 300px;gap:12px;margin-top:12px}
+.plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px}
+.plan svg{width:100%;height:auto;display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.card h2{font-size:15px;margin-bottom:6px}
+ol.leg{list-style:none;display:grid;gap:3px}
+ol.leg li{display:flex;gap:7px;align-items:flex-start}
+.n{flex:none;width:18px;height:18px;border-radius:50%;background:var(--tomate);color:#fff;font-weight:700;font-size:10px;display:inline-grid;place-items:center;margin-top:1px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.why .card b{display:block;font-family:"Bricolage Grotesque";font-size:14px;margin-bottom:3px;color:var(--basilic)}
+:root[data-theme="dark"] .why .card b{color:var(--pousse)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .why .card b{color:var(--pousse)}}
+.side{display:grid;gap:10px;align-content:start}
+.equip{font-size:11.5px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}.why{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.why{grid-template-columns:1fr}}
+@page{size:A4 landscape;margin:8mm}
+@media print{
+  :root{--bg:#FFF8EE !important;--fg:#1D2621 !important;--muted:#4F5A54 !important;--line:#E7DED0 !important;--card:#fff !important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{padding:0;max-width:none}
+  body{font-size:10.4px}
+  .grid{grid-template-columns:1fr 270px}
+  .why{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="icon" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8"/>
+  <g stroke="currentColor" stroke-width="5" stroke-linecap="round"><line x1="50" y1="14" x2="50" y2="22"/><line x1="86" y1="50" x2="78" y2="50"/><line x1="50" y1="86" x2="50" y2="78"/><line x1="14" y1="50" x2="22" y2="50"/></g>
+  <g transform="rotate(120 50 50)"><path d="M50 52 C 38 40, 40 24, 50 16 C 60 24, 62 40, 50 52 Z" fill="var(--leaf,#A7D46F)"/><line x1="50" y1="50" x2="50" y2="24" stroke="var(--vein,#2E7D55)" stroke-width="3" stroke-linecap="round"/></g>
+  <circle cx="50" cy="50" r="6" fill="currentColor"/>
+</symbol></defs></svg>
+
+<div class="page">
+  <div class="head">
+    <div class="wm"><svg width="24" height="24" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span>plement</span></div>
+    <h1>Le Labo Sainplement : quartier Nord, 100 m²</h1>
+    <span class="tag">Ateliers collectifs healthy · 4 participants</span>
+  </div>
+
+  <div class="grid">
+    <div class="plan">
+      <svg viewBox="-110 -80 1570 920" role="img" aria-label="Plan d'agencement du labo">
+        <style>
+          .wall{fill:#8A8F8C}
+          .z{stroke:#1D2621;stroke-width:3}
+          .t{font-family:"DM Sans",sans-serif;font-size:22px;fill:#1D2621;font-weight:700}
+          .ts{font-family:"DM Sans",sans-serif;font-size:18px;fill:#1D2621}
+          .tw{font-family:"DM Sans",sans-serif;font-size:20px;fill:#fff;font-weight:700}
+          .dim{font-family:"DM Sans",sans-serif;font-size:22px;fill:#4F5A54}
+          .door{fill:#fff;stroke:#1D2621;stroke-width:2}
+          .num circle{fill:#F25C3B}
+          .num text{font-family:"DM Sans",sans-serif;font-size:20px;font-weight:700;fill:#fff;text-anchor:middle;dominant-baseline:central}
+        </style>
+        <!-- sol -->
+        <rect x="0" y="0" width="1350" height="750" fill="#FFF8EE"/>
+        <!-- zone atelier (tapis) -->
+        <rect x="400" y="160" width="560" height="420" rx="24" fill="#A7D46F" opacity=".22"/>
+        <!-- dégustation -->
+        <rect x="40" y="440" width="300" height="270" rx="24" fill="#FFD24A" opacity=".28"/>
+
+        <!-- murs -->
+        <rect class="wall" x="-15" y="-15" width="1380" height="15"/>
+        <rect class="wall" x="-15" y="750" width="1380" height="15"/>
+        <rect class="wall" x="-15" y="-15" width="15" height="780"/>
+        <rect class="wall" x="1350" y="-15" width="15" height="780"/>
+        <!-- portes (ouvertures) -->
+        <rect class="door" x="615" y="-15" width="120" height="15"/>
+        <rect class="door" x="615" y="750" width="120" height="15"/>
+        <rect class="door" x="-15" y="320" width="15" height="120"/>
+        <rect class="door" x="1350" y="360" width="15" height="120"/>
+        <text class="dim" x="675" y="-30" text-anchor="middle">Livraisons ↓</text>
+        <text class="dim" x="675" y="800" text-anchor="middle">↑ Entrée clients</text>
+        <text class="dim" x="-30" y="380" text-anchor="middle" transform="rotate(-90 -30 380)">Sortie de secours</text>
+        <text class="dim" x="1395" y="420" text-anchor="middle" transform="rotate(90 1395 420)">Sortie déchets</text>
+        <text class="dim" x="675" y="835" text-anchor="middle">13,5 m</text>
+        <text class="dim" x="-80" y="380" text-anchor="middle" transform="rotate(-90 -80 380)">7,5 m</text>
+
+        <!-- WC PMR -->
+        <rect class="z" x="1180" y="0" width="170" height="170" fill="#E7DED0"/>
+        <text class="ts" x="1265" y="92" text-anchor="middle">WC PMR</text>
+
+        <!-- 3 fours combinés -->
+        <g class="z" fill="#F25C3B"><rect x="240" y="0" width="100" height="70"/><rect x="340" y="0" width="100" height="70"/><rect x="440" y="0" width="100" height="70"/></g>
+        <text class="tw" x="390" y="42" text-anchor="middle">3 fours combinés</text>
+
+        <!-- froid -->
+        <rect class="z" x="760" y="0" width="110" height="80" fill="#9CC9E0"/>
+        <rect class="z" x="870" y="0" width="80" height="80" fill="#C7E2EF"/>
+        <text class="ts" x="815" y="48" text-anchor="middle">Frigo</text>
+        <text class="ts" x="910" y="48" text-anchor="middle">Congél.</text>
+
+        <!-- plonge + plan prépa -->
+        <rect class="z" x="960" y="0" width="100" height="70" fill="#D9E6EC"/>
+        <circle cx="1010" cy="35" r="20" fill="#fff" stroke="#1D2621" stroke-width="2"/>
+        <rect class="z" x="1060" y="0" width="110" height="70" fill="#fff"/>
+        <text class="ts" x="1010" y="98" text-anchor="middle">Plonge</text>
+        <text class="ts" x="1115" y="42" text-anchor="middle">Prépa</text>
+
+        <!-- stock vrac -->
+        <rect class="z" x="1275" y="190" width="75" height="150" fill="#E8C9A0"/>
+        <text class="ts" x="1240" y="270" text-anchor="end">Épicerie vrac</text>
+
+        <!-- tri & compost -->
+        <g class="z"><rect x="1265" y="500" width="85" height="45" fill="#2E7D55"/><rect x="1265" y="545" width="85" height="45" fill="#FFD24A"/><rect x="1265" y="590" width="85" height="45" fill="#8A5A3B"/></g>
+        <text class="ts" x="1250" y="575" text-anchor="end">Tri &amp; compost</text>
+
+        <!-- îlot démo coach -->
+        <rect class="z" x="540" y="190" width="280" height="90" rx="10" fill="#2E7D55"/>
+        <text class="tw" x="680" y="242" text-anchor="middle">Îlot démo coach</text>
+        <rect x="560" y="160" width="240" height="14" fill="#1D2621"/>
+        <text class="ts" x="680" y="150" text-anchor="middle">Écran (vue plongeante)</text>
+
+        <!-- 4 postes participants -->
+        <g class="z" fill="#fff">
+          <rect x="450" y="340" width="190" height="75" rx="8"/><rect x="720" y="340" width="190" height="75" rx="8"/>
+          <rect x="450" y="470" width="190" height="75" rx="8"/><rect x="720" y="470" width="190" height="75" rx="8"/>
+        </g>
+        <g class="ts" text-anchor="middle"><text x="545" y="384">Poste 1</text><text x="815" y="384">Poste 2</text><text x="545" y="514">Poste 3</text><text x="815" y="514">Poste 4</text></g>
+        <!-- tabourets -->
+        <g fill="#FFD24A" stroke="#1D2621" stroke-width="2">
+          <circle cx="545" cy="440" r="13"/><circle cx="815" cy="440" r="13"/><circle cx="545" cy="570" r="13"/><circle cx="815" cy="570" r="13"/>
+        </g>
+
+        <!-- table dégustation -->
+        <rect class="z" x="100" y="520" width="180" height="110" rx="50" fill="#fff"/>
+        <g fill="#FFD24A" stroke="#1D2621" stroke-width="2">
+          <circle cx="140" cy="500" r="15"/><circle cx="240" cy="500" r="15"/><circle cx="140" cy="650" r="15"/><circle cx="240" cy="650" r="15"/><circle cx="80" cy="575" r="15"/><circle cx="300" cy="575" r="15"/>
+        </g>
+        <text class="ts" x="190" y="580" text-anchor="middle">Dégustation</text>
+
+        <!-- mur d'aromates -->
+        <rect x="0" y="40" width="34" height="250" fill="#2E7D55"/>
+        <g fill="#A7D46F"><circle cx="17" cy="70" r="11"/><circle cx="17" cy="110" r="11"/><circle cx="17" cy="150" r="11"/><circle cx="17" cy="190" r="11"/><circle cx="17" cy="230" r="11"/><circle cx="17" cy="265" r="11"/></g>
+        <text class="ts" x="50" y="170">Mur d'aromates</text>
+        <text class="ts" x="50" y="194">+ spot photo</text>
+
+        <!-- accueil + vestiaire -->
+        <rect class="z" x="400" y="660" width="190" height="60" rx="8" fill="#FFD24A"/>
+        <text class="ts" x="495" y="696" text-anchor="middle">Accueil</text>
+        <rect class="z" x="760" y="690" width="70" height="60" fill="#D9E6EC"/>
+        <circle cx="795" cy="720" r="16" fill="#fff" stroke="#1D2621" stroke-width="2"/>
+        <text class="ts" x="795" y="676" text-anchor="middle">Lavabo</text>
+        <rect class="z" x="250" y="725" width="130" height="25" fill="#E7DED0"/>
+        <text class="ts" x="315" y="715" text-anchor="middle">Vestiaire</text>
+
+        <!-- corner boutique -->
+        <rect class="z" x="880" y="695" width="300" height="55" fill="#F25C3B"/>
+        <text class="tw" x="1030" y="728" text-anchor="middle">Corner Sainplement Box</text>
+
+        <!-- parcours client -->
+        <path d="M675 740 C 675 640, 675 620, 680 600" fill="none" stroke="#F25C3B" stroke-width="4" stroke-dasharray="10 8"/>
+        <path d="M400 500 C 370 520, 340 540, 300 560" fill="none" stroke="#F25C3B" stroke-width="4" stroke-dasharray="10 8"/>
+
+        <!-- numéros -->
+        <g class="num">
+          <g><circle cx="610" cy="690" r="16"/><text x="610" y="690">1</text></g>
+          <g><circle cx="845" cy="676" r="16"/><text x="845" y="676">2</text></g>
+          <g><circle cx="530" cy="225" r="16"/><text x="530" y="225">3</text></g>
+          <g><circle cx="440" cy="440" r="16"/><text x="440" y="440">4</text></g>
+          <g><circle cx="225" cy="90" r="16"/><text x="225" y="90">5</text></g>
+          <g><circle cx="745" cy="95" r="16"/><text x="745" y="95">6</text></g>
+          <g><circle cx="1115" cy="98" r="16"/><text x="1115" y="98">7</text></g>
+          <g><circle cx="1255" cy="215" r="16"/><text x="1255" y="215">8</text></g>
+          <g><circle cx="1245" cy="525" r="16"/><text x="1245" y="525">9</text></g>
+          <g><circle cx="190" cy="460" r="16"/><text x="190" y="460">10</text></g>
+          <g><circle cx="60" cy="130" r="16"/><text x="60" y="130">11</text></g>
+          <g><circle cx="1195" cy="722" r="16"/><text x="1195" y="722">12</text></g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="side">
+      <div class="card">
+        <h2>Légende</h2>
+        <ol class="leg">
+          <li><span class="n">1</span><span><b>Accueil et vestiaire</b> : on dépose ses affaires, on enfile son tablier</span></li>
+          <li><span class="n">2</span><span><b>Lavabo</b> : lavage des mains dès l'entrée</span></li>
+          <li><span class="n">3</span><span><b>Îlot démo du coach</b>, avec un écran pour voir les gestes en vue plongeante</span></li>
+          <li><span class="n">4</span><span><b>4 postes participants</b> face au coach, avec des allées de 1,4 m</span></li>
+          <li><span class="n">5</span><span><b>3 fours combinés</b>, regroupés contre le mur</span></li>
+          <li><span class="n">6</span><span><b>Grand réfrigérateur et congélateur</b>, près des livraisons</span></li>
+          <li><span class="n">7</span><span><b>Plonge et plan de préparation</b> (le 6e plan de travail)</span></li>
+          <li><span class="n">8</span><span><b>Épicerie en vrac</b> : bocaux, légumineuses, épices</span></li>
+          <li><span class="n">9</span><span><b>Tri et compost</b> : 3 bacs, avec sortie directe des déchets</span></li>
+          <li><span class="n">10</span><span><b>Table de dégustation</b> de 6 places : on mange ensemble ce qu'on a cuisiné</span></li>
+          <li><span class="n">11</span><span><b>Mur d'aromates vivant</b> et spot photo pour Instagram</span></li>
+          <li><span class="n">12</span><span><b>Corner Sainplement Box</b> : kits et épices à emporter</span></li>
+        </ol>
+      </div>
+      <div class="card equip">
+        <h2>Équipement « Cuisine Pro »</h2>
+        6 plans de travail (4 participants, 1 coach, 1 prépa) · 3 fours combinés · 1 grand réfrigérateur · 1 congélateur · 1 plonge
+      </div>
+    </div>
+  </div>
+
+  <div class="why">
+    <div class="card"><b>🧑‍🍳 Une vraie expérience</b>Les 4 postes font face au coach, et l'écran permet de voir chaque geste. Le cours se termine autour de la table de dégustation : on vient pour apprendre, on reste pour partager.</div>
+    <div class="card"><b>🧼 Hygiène : la marche en avant</b>Les produits entrent par la porte de livraison, passent par le froid, la préparation, la cuisson puis la dégustation. Les déchets sortent par l'autre porte. Le propre et le sale ne se croisent jamais.</div>
+    <div class="card"><b>🌱 Un labo responsable</b>Compost et tri, épicerie en vrac sans emballage, mur d'aromates cueillis à la minute, éclairage LED, et chauffage réglé à 19 °C pour limiter le fioul.</div>
+    <div class="card"><b>♿ Accessible et rentable</b>Des allées de 1,4 m et un WC accessible aux personnes à mobilité réduite. Le corner boutique prépare la vente de nos kits « 5 ingrédients » au J3.</div>
+  </div>
+</div>
+</body>
+</html>
