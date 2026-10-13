@@ -91,3 +91,14 @@ Domicile 38 € / 55 min / épices / **Gourmand** · Collectifs 16 € / 70 min 
 
 ## T8 – Août (recommandé, après note de conjoncture M8)
 Domicile **37 €** / **55 min** / épices / Gourmand · Collectifs **15 €** (mode attaque) / 70 min / aromates / Approfondissement · Kits : fournisseur **Tradinette** (Dijon, artisanal), 1 lot de 200 à 14 € · recrutement **Amine** (santé et nutrition sportive, 30 h, 500 € brut, arrive en septembre) · accompagnement Julien 8 h · réseaux sociaux 4 h · étude 3 h · flyers devis 1.
+
+### Résultats T8 – Août (mode attaque)
+- Classement : **2e** en cumulé (88,4, −1,4), score mensuel 78,4. MON01 passe 1er (91,1, mois 100,6). NIC06 102,8 et LYO07 98,3 sur le mois.
+- Axes : Financier **28 %** ↓↓ · Commercial 65 % ↓ · Responsable 117 % ↑ · Efficace 104 % ↓.
+- CA 11 713 € (−677 €), résultat **531 €** (−1 377 €), marge 4,6 %. Trésorerie 4 829 € (+5 634 € de collectifs encaissés en septembre, TVA 1 108 €).
+- Domicile : 86 cours (−5) à 37 €/55 min épices, satisfaction **70,1 (+3,2)**, attrition 23,1 %.
+- Collectifs : 313 (−9) à 15 €/70 min, satisfaction 65,4 (+0,5).
+- Kits : **400 achetés au lieu de 200** (4 000 € HT, 4 800 € TTC comptant), 274 vendus (+4), stock final 156 (valeur 9,86 €). Marge kits ≈ 1 134 €.
+- Concurrents kits : LYO07 est passé chez Tradinette à 15 € et fait 13,5 % ; TOU02 et MON01 restent chez Tastymed à 13 € (16,2 % et 15 %).
+- La baisse du résultat vient des choix du mode attaque : marge des kits (≈ −490 €), collectifs à 15 € (≈ −460 €), domicile à 37 € (≈ −280 €), épices (≈ −160 €).
+- Accompagnement Julien encore à 0 : engagement 81,6 %, 5,5 h perdues.
