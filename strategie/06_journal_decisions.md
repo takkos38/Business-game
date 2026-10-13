@@ -66,3 +66,15 @@ Domicile 38 € / 50 min / épices / Healthy · Collectifs 17 € / 70 min / ép
 
 ## T6 – Juin (recommandé)
 Domicile 38 € / **55 min** / épices / Healthy · Collectifs 17 € / 70 min / **aromates** / Initiation · fournisseur **Papilles** · communication **Dynamique** · accompagnement Julien **8 h** · réseaux sociaux 20 h · flyers devis 1 · études concurrents domicile + collectifs.
+
+### Résultats T6 – Juin
+- Classement : 1er en cumulé (89,3), score mensuel 90,2. MON01 2e (86,3, mois 94,1) ; LYO07 a fait 100,5 sur le mois.
+- Axes : Financier 59 % ↑ · Commercial 78 % ↑ · Responsable 118 % ↓ · Efficace 105 % ↑.
+- CA 9 014 €, résultat +636 €. Trésorerie 3 940 € (+6 029 € de collectifs encaissés en juillet, TVA 1 389 €).
+- Domicile : 105 cours à 38 €/50 min **aromates** (épices non remises), 79 clients, attrition 17,9 %, satisfaction 69,7 (−3,1).
+- Collectifs : 314 participations à 16 €/70 min aromates (Initiation), 246 clients (+58/−17), satisfaction 68,5 (−3,4).
+- Fournisseur Papilles retenu (cadeaux 419 € = 419 aromates à 1 €). Accompagnement Julien toujours à 0 → engagement 88 %.
+- Constat : la satisfaction baisse de ~3 pts/mois depuis le passage en Healthy (mars) et en Initiation (mai). Les meilleures PDM domicile sont en Gourmand / Cuisine du monde.
+
+## T7 – Juillet (recommandé)
+Domicile 38 € / 55 min / épices / **Gourmand** · Collectifs 16 € / 70 min / aromates / **Approfondissement** · Kits condiments : 3 lots (300 u.) à 14 € · accompagnement Julien 8 h · réseaux sociaux 4 h · flyers devis 1 · étude concurrents kits.
