@@ -55,3 +55,14 @@ Orientation Healthy · 37 € · 45 min · épices · recrutement Julien · rés
 
 ## T5 – Mai (recommandé)
 Domicile 38 € / 50 min / épices / Healthy · Collectifs 17 € / 70 min / épices / Initiation · matériel collectifs devis 2 (EuroChef) · accompagnement Julien 8 h · réseaux sociaux 18 h · flyers devis 1 · études concurrents domicile + collectifs.
+
+### Résultats T5 – Mai
+- Classement : 1er en cumulé (89,1), score mensuel 88,5 (LYO07 90,2). MON01 2e à 84,7.
+- Axes : Financier 57 % ↑ · Commercial 72 % ↓ · Responsable 121 % ↓ · Efficace 104 % ↑.
+- CA 9 343 €, résultat **+264 €** (matériel 350 € et flyers 300 € inclus). Trésorerie 3 173 € (+6 059 € de collectifs encaissés en juin, TVA 1 315 € à payer).
+- Domicile : 113 cours à 38 €/50 min, 78 clients (+18/−13, attrition 17,8 %), satisfaction 72,8 (−1,7).
+- Collectifs : 297 participations à 17 €/70 min (Initiation), 205 clients (+67/−10), satisfaction 71,9 (−3,6), PDM 10,1 %.
+- Julien : 30 h domicile + 44 h collectifs, 34 h libres, engagement 91 % (accompagnement resté à 0).
+
+## T6 – Juin (recommandé)
+Domicile 38 € / **55 min** / épices / Healthy · Collectifs 17 € / 70 min / **aromates** / Initiation · fournisseur **Papilles** · communication **Dynamique** · accompagnement Julien **8 h** · réseaux sociaux 20 h · flyers devis 1 · études concurrents domicile + collectifs.
