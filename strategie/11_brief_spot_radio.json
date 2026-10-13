@@ -1,0 +1,76 @@
+{
+  "mission": "Écrire le script d'un spot radio de 30 secondes maximum pour l'entreprise Sainplement, en DEUX versions : français (FR) et anglais (EN). Le spot doit faire la promotion de l'entreprise et de ses services.",
+  "contexte": {
+    "cadre": "Business game Kuisto (IDRAC Business School, Sciado Partenaires). Challenge « Spot Radio FR/EN ». Le meilleur dépôt de chaque univers reçoit un bonus.",
+    "equipe": "06_GRE03 (Grenoble), univers C",
+    "membres": [
+      { "nom": "Titouan POUGNEAUD", "role": "Directeur général" },
+      { "nom": "Romain BEAUDOIN", "role": "Directeur financier" },
+      { "nom": "Yasmine ZAITER", "role": "Ressources humaines" },
+      { "nom": "Lou LESNE", "role": "Marketing / Commercial" }
+    ]
+  },
+  "consignes_officielles": {
+    "duree_max": "30 secondes par version (FR et EN), musique et bruitages compris",
+    "langues": ["français", "anglais"],
+    "format_final": "MP3 ou WMA",
+    "realisation": "Enregistrement au micro de l'ordinateur ou du téléphone, puis montage avec la voix, une musique et des bruitages",
+    "criteres": [
+      "Être percutant",
+      "Attirer l'attention d'un auditeur qui écoute la radio en fond sonore",
+      "Laisser libre cours à l'imagination (la radio, c'est un média d'images mentales)",
+      "Posture, mise en forme et contenu sont évalués"
+    ]
+  },
+  "entreprise": {
+    "nom": "Sainplement",
+    "prononciation": "« sain-ple-ment » : se prononce exactement comme « simplement ». Le jeu de mots est « sain » + « simplement ». À l'oral, on peut le souligner une fois (« Sainplement : S-A-I-N, comme manger sain »), car à l'écoute on entend « simplement ».",
+    "baseline_fr": "Manger sain, c'est sainplement facile.",
+    "baseline_en_proposition": "Eating healthy? Sainplement easy. (garder le nom de marque en français)",
+    "statut": "SARL créée en janvier par Alice (coach cuisine) et Théo (gestion), Grenoble",
+    "positionnement": "Cuisine saine ET gourmande, simple et rapide. On casse l'idée que manger sain, c'est compliqué, long, cher ou triste.",
+    "promesse": "Une recette saine, 5 ingrédients maximum, prête en 30 minutes, et l'envie de la refaire toute la semaine.",
+    "cible": "Les 20-40 ans : étudiants, jeunes actifs, colocs, jeunes couples, qui veulent mieux manger mais pensent ne pas avoir le temps ni le niveau.",
+    "valeurs": ["Simplicité", "Bienveillance (on ne juge personne)", "Plaisir (sain ne veut pas dire triste)", "Responsabilité (bio, local, de saison, anti-gaspi, déplacements à vélo)", "Transmission (rendre les clients autonomes)"],
+    "offres": [
+      { "nom": "Cours particuliers à domicile", "detail": "Un coach vient chez vous, environ 50-55 min, avec un pot d'épices bio offert", "prix_indicatif": "38 € HT" },
+      { "nom": "Ateliers collectifs au Labo Sainplement", "detail": "Petits groupes, 70 min, dans notre labo du quartier Nord de Grenoble, on cuisine puis on déguste ensemble", "prix_indicatif": "16 € HT par personne" },
+      { "nom": "Kits condiments", "detail": "Des kits de condiments méditerranéens à emporter pour refaire les recettes chez soi", "prix_indicatif": "14 € HT" },
+      { "nom": "Offre entreprises « Pause déj' Sainplement »", "detail": "Ateliers d'1 h entre 12 h et 14 h pour les collaborateurs : on cuisine son déjeuner sain et on le partage", "prix_indicatif": "sur devis" }
+    ],
+    "equipe_coachs": [
+      { "nom": "Alice", "profil": "Fondatrice, passionnée de cuisine healthy, ancienne de l'informatique, pédagogue et bienveillante" },
+      { "nom": "Julien", "profil": "Coach cuisine végétale et de saison, en reconversion, très engagé pour l'environnement" }
+    ],
+    "preuves_rse": ["Fournisseur d'épices et d'aromates bio et local (Papilles)", "Matériel de cuisine fabriqué en France", "Coachs qui se déplacent à vélo", "Tri, compost et épicerie en vrac au labo"],
+    "contact_fictif": { "site": "sainplement.fr", "instagram": "@sainplement" }
+  },
+  "identite_sonore": {
+    "ton": "Complice, positif, énergique, jamais moralisateur. On tutoie. On parle de plaisir avant de parler de santé. Pas de vocabulaire « régime », « calories », « culpabilité ».",
+    "ambiance": "Jeune, dynamique, urbaine (orientation de communication « Dynamique » : message vivant et imagé, pour les jeunes actifs)",
+    "elements_signature": ["Tic-tac de minuteur de cuisine puis « ding ! »", "Grésillement d'une poêle", "Couteau qui coupe sur une planche", "Sonnette de vélo (le coach arrive)", "Rires entre amis autour d'une table"],
+    "phrases_deja_utilisees_dans_la_marque": [
+      "Pas le temps ? 30 minutes. Pas d'idée ? 5 ingrédients. Pas d'excuse.",
+      "Manger sain, c'est sainplement facile.",
+      "Tu sais rendre une courgette irrésistible ? On t'attend."
+    ]
+  },
+  "livrables_attendus": [
+    "3 concepts créatifs différents en 2 lignes chacun (ex. sketch, témoignage, voix off rythmée), avec ta recommandation",
+    "Pour le concept recommandé : le script FR complet, chronométré au timecode (0:00 à 0:30)",
+    "Le script EN complet, adapté (pas une traduction mot à mot), chronométré lui aussi",
+    "Pour chaque script : les voix (qui parle, ton), la musique (style, tempo), les bruitages placés au bon moment",
+    "Le nombre de mots de chaque version (viser 65 à 75 mots maximum pour 30 s, avec la musique et les bruitages)",
+    "3 conseils de réalisation pour l'enregistrement au téléphone et le montage (logiciel gratuit, niveau sonore, export MP3)"
+  ],
+  "regles_d_ecriture": [
+    "Accroche sonore dans les 3 premières secondes (bruitage ou question choc) pour capter quelqu'un qui écoute en fond sonore",
+    "Un seul message principal : manger sain, c'est simple, rapide et bon",
+    "Dire le nom « Sainplement » au moins 2 fois, dont une à la fin",
+    "Finir par la baseline et un appel à l'action clair (site ou Instagram)",
+    "Phrases courtes, faciles à dire à voix haute, rythme rapide",
+    "Pas plus de 2 voix pour rester simple à enregistrer",
+    "Ne pas citer de prix, sauf éventuellement « dès 16 € »",
+    "Rester inclusif et bienveillant, sans cliché"
+  ]
+}
