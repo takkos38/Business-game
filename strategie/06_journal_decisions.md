@@ -105,3 +105,14 @@ Domicile **37 €** / **55 min** / épices / Gourmand · Collectifs **15 €** (
 
 ## T9 – Septembre (recommandé, après note M09 : banquier + accompagnement d'Amine)
 Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / aromates / Approfondissement · Kits : retour **Tastymed**, 1 lot de 100 en plus des 156 en stock, prix 14 € · **pas d'emprunt** · accompagnement Julien 6 h + Amine 8 h (pris sur Alice ; Julien et Amine ont de la capacité libre) · Amine à **vélo** · flyers devis 1 · réseaux sociaux 2 h · études concurrents domicile + collectifs (Théo à 40 h).
+
+### Résultats T9 – Septembre
+- Classement : 2e en cumulé (87,2, −1,2), score mensuel 77,3. MON01 91,3 ; **LYO07 87,0, à 0,2 pt**.
+- Axes : Financier 25 % · Commercial 68 % ↑ · Responsable 112 % ↓ · Efficace 104 % ↑.
+- CA 11 653 €, résultat 707 € (+176 €), trésorerie 7 753 € (+5 724 € de collectifs encaissés en octobre, TVA 1 851 €). Pas d'emprunt.
+- Domicile : **127 cours (+41)** à 37 €/55 min, 95 clients (+32/−10), satisfaction 69,7. Collectifs : 318 (+5), **14 ventes perdues** (capacité). Kits : 156 vendus (le stock), **135 ventes perdues**, aucun achat → stock 0.
+- RH : occupation 99,9 % (tout le monde est plein). Amine en voiture → empreinte carbone +1 780 (153 / k€ de CA). Alice a fait 14 h de réseaux sociaux. Accompagnement encore à 0 (engagement Julien 77 %, Amine 76 %, productivité Amine 63 %).
+- Études : domicile, TOU02 leader (33 €/40 min Gourmand, 16,1 %) ; collectifs, MON01 (16 €/60 min Perfectionnement, 13,9 %), NIC06 (20 €/45 min, 13 %), LYO07 (17 €/60 min, 12,6 %).
+
+## T10 – Octobre (recommandé, note M10 : renouvellement du matériel domicile + équipement collectifs)
+Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / aromates / Approfondissement · Kits : Tastymed, **3 lots (300)**, 14 € · matériel domicile **devis 3 Cuisin'art** (600 €, fabriqué en France) · équipement collectifs **option 2 Cuisine Pro** (3 000 €) · flyers devis 1 · réseaux sociaux 0 · études 0 (Théo : 10 + 2 + 20 + 8 h d'installation = 40 h) · accompagnement Julien 6 h + Amine 8 h · Amine en **transports en commun** · pas d'emprunt.
