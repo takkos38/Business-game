@@ -90,4 +90,4 @@ Domicile 38 € / 55 min / épices / **Gourmand** · Collectifs 16 € / 70 min 
 - Alice saturée (0,2 h libre), Julien 42,9 h libres, engagement 84,8 %, accompagnement toujours à 0.
 
 ## T8 – Août (recommandé, après note de conjoncture M8)
-Domicile **37 €** / **55 min** / épices / Gourmand · Collectifs 16 € / 70 min / aromates / Approfondissement · Kits : fournisseur **Tradinette** (Dijon, artisanal), 1 lot de 200 à 14 € · recrutement **Amine** (santé et nutrition sportive, 30 h, 500 € brut, arrive en septembre) · accompagnement Julien 8 h · réseaux sociaux 4 h · étude 3 h · flyers devis 1.
+Domicile **37 €** / **55 min** / épices / Gourmand · Collectifs **15 €** (mode attaque) / 70 min / aromates / Approfondissement · Kits : fournisseur **Tradinette** (Dijon, artisanal), 1 lot de 200 à 14 € · recrutement **Amine** (santé et nutrition sportive, 30 h, 500 € brut, arrive en septembre) · accompagnement Julien 8 h · réseaux sociaux 4 h · étude 3 h · flyers devis 1.
