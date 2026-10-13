@@ -44,3 +44,14 @@ Temps admin de Théo : 19 h sur 30 h. Résultat estimé ≈ +365 € (135 cours)
 
 ## T3 – Mars (recommandé)
 Orientation Healthy · 37 € · 45 min · épices · recrutement Julien · réseaux sociaux 12 h (Théo) · flyers devis 1 · études concurrents + communication digitale · transports en commun si possible.
+
+### Résultats T4 – Avril (lancement des cours collectifs, labo Nord)
+- Classement : 1er en cumulé (89,3, −1,2) mais score mensuel 85,8 ; TOU02 (91,7), GRE07 (91,1), LYO07 (88,8) font mieux ce mois-ci. MON01 à 4 pts.
+- Axes : Financier 38 % ↓↓ · Commercial 73 % ↓ · Responsable 130 % ↑ · Efficace 103 % ↑.
+- Domicile : 116 cours à 39 €/50 min, 0 perdu, 73 clients (+17/−10, attrition 15,2 %), satisfaction 74,5 (−3,1).
+- Collectifs : 246 participations à 17 €/60 min = 4 182 €, 148 clients, satisfaction 75,4, PDM 8,9 % (moyenne prix concurrents ≈ 15,6 €).
+- CA 8 706 €, résultat −1 053 € (dont ≈ 1 375 € ponctuels : 2e loyer 900, frais dossier 175, flyers 300). Trésorerie 3 179 € (+5 018 € de collectifs encaissés en mai).
+- Julien : 60 h de collectifs, 58 h inoccupées (occupation 54,9 %). Alice saturée (0,8 h libre).
+
+## T5 – Mai (recommandé)
+Domicile 38 € / 50 min / épices / Healthy · Collectifs 17 € / 70 min / épices / Initiation · matériel collectifs devis 2 (EuroChef) · accompagnement Julien 8 h · réseaux sociaux 18 h · flyers devis 1 · études concurrents domicile + collectifs.
