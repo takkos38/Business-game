@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Plan Kits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--basilic:#2E7D55;--pousse:#A7D46F;--citron:#FFD24A;--tomate:#F25C3B;--creme:#FFF8EE;--encre:#1D2621;--muted:#5B6660;--line:#E7DED0;--bg:var(--creme);--fg:var(--encre);--card:#fff;--soft:#EEF6E4}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141A17;--fg:#F3EEE5;--muted:#A9B3AD;--line:#2A332E;--card:#1C2420;--soft:#1F2B22}}
+:root[data-theme="dark"]{--bg:#141A17;--fg:#F3EEE5;--muted:#A9B3AD;--line:#2A332E;--card:#1C2420;--soft:#1F2B22}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,sans-serif;font-size:12.5px;line-height:1.45}
+.page{max-width:840px;margin:0 auto;padding:20px 16px}
+.sheet+.sheet{margin-top:28px}
+.disp{font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.wm{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;display:inline-flex;align-items:center;gap:6px;letter-spacing:-.04em}
+.wm .s{color:var(--pousse)}
+.hero{background:var(--basilic);color:#fff;border-radius:18px;padding:18px 22px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:end}
+.hero h1{font-family:"Bricolage Grotesque";font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-.03em;margin-top:10px}
+.hero h1 em{font-style:normal;color:var(--citron)}
+.hero p{opacity:.92;margin-top:6px;max-width:520px}
+.hero .meta{font-size:11px;text-align:right;opacity:.9}
+.bar{display:flex;align-items:center;gap:10px;justify-content:space-between;border-bottom:2px solid var(--basilic);padding-bottom:6px}
+.bar .n{font-family:"Bricolage Grotesque";font-weight:800;font-size:12px;color:var(--basilic)}
+h2{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px;letter-spacing:-.02em;margin:14px 0 8px;display:flex;align-items:center;gap:10px}
+h2 .num{background:var(--citron);color:var(--encre);border-radius:10px;width:30px;height:30px;display:inline-grid;place-items:center;font-size:16px}
+h3{font-family:"Bricolage Grotesque";font-weight:700;font-size:14.5px;margin-bottom:4px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 13px}
+.card.soft{background:var(--soft);border-color:transparent}
+.card.accent{border-left:5px solid var(--basilic)}
+.lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--basilic);margin-bottom:3px}
+:root[data-theme="dark"] .lbl{color:var(--pousse)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .lbl{color:var(--pousse)}}
+.kpi b{display:block;font-family:"Bricolage Grotesque";font-weight:800;font-size:24px;line-height:1.05;color:var(--basilic)}
+:root[data-theme="dark"] .kpi b{color:var(--pousse)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .kpi b{color:var(--pousse)}}
+.kpi span{font-size:11px;color:var(--muted)}
+ul{list-style:none;display:grid;gap:3px}
+li{padding-left:13px;position:relative}
+li::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:var(--pousse)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th{background:var(--basilic);color:#fff;text-align:left;font-size:11px;padding:6px 9px}
+td{padding:5px 9px;border-top:1px solid var(--line)}
+td.r,th.r{text-align:right;white-space:nowrap}
+tr.us td{background:#FFF3C4;font-weight:700;color:#1D2621}
+.quote{font-family:"Bricolage Grotesque";font-weight:700;font-size:16px;line-height:1.25;border-left:5px solid var(--citron);padding:4px 0 4px 12px;margin:10px 0}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:9px 10px;position:relative;counter-increment:s}
+.step::before{content:counter(s);display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--tomate);color:#fff;font-weight:700;font-size:11px;margin-bottom:4px}
+.step b{display:block;font-size:12px}
+.step span{font-size:11px;color:var(--muted)}
+.foot{margin-top:12px;font-size:9.5px;color:var(--muted);text-align:center}
+.small{font-size:11px;color:var(--muted)}
+@media (max-width:700px){.g2,.g3,.g4,.hero{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hero .meta{text-align:left}}
+@page{size:A4;margin:10mm}
+@media print{
+  :root{--bg:#FFF8EE !important;--fg:#1D2621 !important;--muted:#5B6660 !important;--line:#E7DED0 !important;--card:#fff !important;--soft:#EEF6E4 !important}
+  .lbl,.kpi b{color:#2E7D55 !important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{padding:0;max-width:none}
+  body{font-size:11.2px}
+  .sheet{break-after:page}
+  .sheet:last-child{break-after:auto}
+  .sheet+.sheet{margin-top:0}
+  .g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:repeat(5,1fr)}.hero{grid-template-columns:1fr auto}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="icon" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="8"/>
+  <g stroke="currentColor" stroke-width="5" stroke-linecap="round"><line x1="50" y1="14" x2="50" y2="22"/><line x1="86" y1="50" x2="78" y2="50"/><line x1="50" y1="86" x2="50" y2="78"/><line x1="14" y1="50" x2="22" y2="50"/></g>
+  <g transform="rotate(120 50 50)"><path d="M50 52 C 38 40, 40 24, 50 16 C 60 24, 62 40, 50 52 Z" fill="var(--leaf,#A7D46F)"/><line x1="50" y1="50" x2="50" y2="24" stroke="var(--vein,#2E7D55)" stroke-width="3" stroke-linecap="round"/></g>
+  <circle cx="50" cy="50" r="6" fill="currentColor"/>
+</symbol></defs></svg>
+
+<div class="page">
+
+<!-- PAGE 1 -->
+<section class="sheet">
+  <div class="hero">
+    <div>
+      <div class="wm"><svg width="26" height="26" style="color:#fff;--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span>plement</span></div>
+      <h1>Business plan<br><em>Les kits Sainplement</em></h1>
+      <p>Prolonger le cours à la maison : des condiments artisanaux français pour refaire nos recettes toute la semaine.</p>
+    </div>
+    <div class="meta">Équipe 06_GRE03 · Grenoble<br>Août 2026<br>Pour : Alice, fondatrice</div>
+  </div>
+
+  <h2><span class="num">1</span>Résumé exécutif</h2>
+
+  <div class="g2">
+    <div class="card accent">
+      <div class="lbl">L'entreprise</div>
+      <p><b>Sainplement</b> est une SARL grenobloise créée en janvier. Nos coachs donnent des cours de cuisine saine et gourmande, à domicile et en ateliers collectifs dans notre labo du quartier Nord. Notre promesse : <b>5 ingrédients, 30 minutes, zéro prise de tête.</b></p>
+    </div>
+    <div class="card accent">
+      <div class="lbl">Le projet</div>
+      <p>Lancer une activité de <b>négoce</b> : acheter puis revendre des <b>kits de condiments artisanaux</b> à nos clients. Le fournisseur retenu est <b>Tradinette</b> (Dijon), qui fait moutardes et vinaigres artisanaux. Prix de vente : <b>14 € HT</b>.</p>
+    </div>
+  </div>
+
+  <div class="quote">« Nos clients adorent le cours. Le kit, c'est ce qui leur permet de le refaire chez eux dès le lendemain. »</div>
+
+  <div class="g3">
+    <div class="card"><div class="lbl">Mission</div>Montrer que manger sain, c'est simple, rapide et bon, même sans temps ni niveau.</div>
+    <div class="card"><div class="lbl">Vision</div>Devenir le réflexe « cuisine saine » des 20-40 ans à Grenoble : cours, produits et recettes au même endroit.</div>
+    <div class="card"><div class="lbl">Objectifs à fin décembre</div>
+      <ul><li>300 kits vendus par mois</li><li>Plus de 10 % de part de marché</li><li>1 200 € de marge brute par mois</li></ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:12px">Ce qui nous différencie</h3>
+  <div class="g4">
+    <div class="card soft"><div class="lbl">Seuls en artisanal</div>Les 10 entreprises du marché vendent toutes Tastymed. Nous sommes les seuls avec un produit artisanal français.</div>
+    <div class="card soft"><div class="lbl">Clients déjà là</div>356 clients actifs en juillet. Le kit se vend en fin de cours, sans coût d'acquisition.</div>
+    <div class="card soft"><div class="lbl">Testé et validé</div>Premier mois de test en juillet : 270 kits vendus sur 300 achetés, soit 90 %.</div>
+    <div class="card soft"><div class="lbl">Cohérent avec la marque</div>Produit local, de qualité, moins de transport : en ligne avec nos valeurs.</div>
+  </div>
+
+  <h3 style="margin-top:12px">Les chiffres clés</h3>
+  <div class="g4">
+    <div class="card kpi"><b>14 €</b><span>prix de vente HT, la moyenne du marché</span></div>
+    <div class="card kpi"><b>4 €</b><span>de marge par kit (achat 10 € HT)</span></div>
+    <div class="card kpi"><b>≈ 2 840</b><span>kits vendus par mois sur notre marché</span></div>
+    <div class="card kpi"><b>≈ 75 kits</b><span>par mois pour payer les 20 h de gestion de Théo</span></div>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="sheet">
+  <div class="bar"><div class="wm" style="font-size:16px;color:var(--basilic)"><svg width="18" height="18" style="color:var(--basilic);--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span>plement</span></div><span class="n">Business plan · Les kits</span></div>
+
+  <h2><span class="num">2</span>Analyse de marché</h2>
+
+  <div class="g2">
+    <div class="card accent">
+      <div class="lbl">Le secteur</div>
+      <ul>
+        <li><b>Cuisine maison en hausse :</b> les 20-40 ans cuisinent plus et cherchent des produits « qui font la différence » sans effort.</li>
+        <li><b>Local et artisanal :</b> les consommateurs privilégient les produits français, traçables et de qualité.</li>
+        <li><b>Achat d'impulsion :</b> un kit à 14 € s'achète facilement juste après une bonne expérience.</li>
+        <li><b>Marché déjà actif :</b> environ 2 840 kits par mois entre les 10 entreprises de notre univers.</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="lbl">Ce que dit notre test de juillet</div>
+      <ul>
+        <li>270 kits vendus, <b>9,5 % de part de marché</b> dès le premier mois.</li>
+        <li>Les concurrents à 13 € font 14,1 % : le marché est <b>sensible au prix</b>.</li>
+        <li>BOR01, à 19 €, ne fait que 6,2 % : <b>pas de place pour un kit trop cher</b>.</li>
+        <li>Les premiers retours sur Tastymed sont mitigés : <b>il y a de la place pour une meilleure qualité</b>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:12px">La concurrence (juillet)</h3>
+  <table>
+    <thead><tr><th>Entreprise</th><th class="r">Prix HT</th><th>Fournisseur</th><th class="r">Part de marché</th></tr></thead>
+    <tbody>
+      <tr><td>01_TOU02 · 03_NIC05 · 04_MON01 · 08_NIC06</td><td class="r">13 €</td><td>Tastymed</td><td class="r">14,1 % chacun</td></tr>
+      <tr><td>07_LYO07</td><td class="r">14 €</td><td>Tastymed</td><td class="r">10,5 %</td></tr>
+      <tr class="us"><td>06_GRE03 · Sainplement</td><td class="r">14 €</td><td>Tastymed → <b>Tradinette</b></td><td class="r">9,5 %</td></tr>
+      <tr><td>02_PAR04 · 10_LYO11</td><td class="r">11 € · 15 €</td><td>Tastymed</td><td class="r">7,0 % chacun</td></tr>
+      <tr><td>05_BOR01 · 09_GRE07</td><td class="r">19 € · 16 €</td><td>Tastymed</td><td class="r">6,2 % · 3,5 %</td></tr>
+    </tbody>
+  </table>
+  <p class="small" style="margin-top:4px">Prix moyen du marché : 14,10 € HT. Tout le monde vend le même produit : la seule vraie différence aujourd'hui, c'est le prix. Avec Tradinette, nous en ajoutons une deuxième : la qualité.</p>
+
+  <h3 style="margin-top:12px">Nos clients cibles et la segmentation</h3>
+  <div class="g4">
+    <div class="card"><div class="lbl">Participants aux collectifs</div><b>278 clients.</b> Étudiants et jeunes actifs de 20 à 30 ans. Ils viennent au labo, goûtent et repartent avec le kit. <i>C'est le cœur de cible.</i></div>
+    <div class="card"><div class="lbl">Clients à domicile</div><b>78 clients.</b> Jeunes couples et actifs de 28 à 40 ans, panier plus élevé. Le coach apporte le kit, la vente est naturelle.</div>
+    <div class="card"><div class="lbl">Entreprises</div>Ateliers « Pause déj' Sainplement ». Un kit offert ou vendu à chaque participant, et des coffrets cadeaux pour les CE.</div>
+    <div class="card"><div class="lbl">Communauté Instagram</div>Non-clients qui suivent nos recettes. Le kit est la porte d'entrée vers un premier cours.</div>
+  </div>
+
+  <h3 style="margin-top:12px">Le choix du fournisseur</h3>
+  <table>
+    <thead><tr><th>Fournisseur</th><th>Produit</th><th class="r">Achat HT</th><th class="r">Lot</th><th>Paiement</th><th>Notre avis</th></tr></thead>
+    <tbody>
+      <tr class="us"><td>Tradinette</td><td>Moutardes et vinaigres artisanaux, Dijon</td><td class="r">10 €</td><td class="r">200</td><td>Comptant</td><td>✔ Qualité, local, cohérent avec la marque</td></tr>
+      <tr><td>Tastymed</td><td>Condiments méditerranéens, Espagne</td><td class="r">8 €</td><td class="r">100</td><td>Comptant</td><td>Meilleure marge, mais retours clients mitigés</td></tr>
+      <tr><td>Le petit plus</td><td>Fermentés et sauces bio</td><td class="r">14 €</td><td class="r">20</td><td>60 j fin de mois</td><td>Trop cher : il faudrait vendre à 19 €</td></tr>
+      <tr><td>Bennies</td><td>Sauces industrielles, tout plastique</td><td class="r">6 €</td><td class="r">150</td><td>30 j fin de mois</td><td>Contraire à nos valeurs</td></tr>
+    </tbody>
+  </table>
+  <p class="small" style="margin-top:4px">On renonce à 2 € de marge par kit par rapport à Tastymed pour proposer le meilleur produit du marché. Le choix est revu chaque mois en fonction de la satisfaction client.</p>
+</section>
+
+<!-- PAGE 3 -->
+<section class="sheet">
+  <div class="bar"><div class="wm" style="font-size:16px;color:var(--basilic)"><svg width="18" height="18" style="color:var(--basilic);--leaf:#A7D46F;--vein:#2E7D55"><use href="#icon"/></svg><span><span class="s">sain</span>plement</span></div><span class="n">Business plan · Les kits</span></div>
+
+  <h2><span class="num">3</span>Stratégie marketing et vente</h2>
+
+  <div class="card accent">
+    <div class="lbl">Positionnement</div>
+    <p><b>Le seul kit artisanal français du marché, au prix du marché.</b> Pas plus cher que la moyenne (14 €), mais nettement meilleur : moutardes et vinaigres de Dijon, choisis par nos coachs, avec une recette Sainplement dans chaque kit.</p>
+  </div>
+
+  <div class="g3" style="margin-top:10px">
+    <div class="card">
+      <div class="lbl">Prix</div>
+      <ul>
+        <li><b>14 € HT</b>, la moyenne du marché.</li>
+        <li>Achat 10 € HT : <b>4 € de marge</b> par kit.</li>
+        <li>Pas de hausse prévue : nos clients réagissent mal aux augmentations.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="lbl">Distribution</div>
+      <ul>
+        <li>En fin d'atelier, au labo Nord.</li>
+        <li>Par le coach, lors du cours à domicile.</li>
+        <li>Sur commande via Instagram et le site.</li>
+        <li>Dans les ateliers entreprises.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="lbl">Promotion</div>
+      <ul>
+        <li>Le kit utilisé <b>pendant le cours</b> : le client goûte avant d'acheter.</li>
+        <li>Une fiche recette « 5 ingrédients, 30 min » dans chaque kit.</li>
+        <li>Coffret cadeau en fin d'année.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:12px">Plan de communication et de publicité</h3>
+  <table>
+    <thead><tr><th>Canal</th><th>Action</th><th>Fréquence</th><th class="r">Coût</th></tr></thead>
+    <tbody>
+      <tr><td><b>Instagram</b></td><td>Une recette en vidéo de 30 s avec un produit du kit</td><td>1 par semaine</td><td class="r">4 h / mois</td></tr>
+      <tr><td><b>En cours</b></td><td>Le coach présente le kit en fin de séance</td><td>À chaque cours</td><td class="r">0 €</td></tr>
+      <tr><td><b>Flyers</b></td><td>QR code « Ton kit pour refaire la recette » au labo</td><td>Chaque mois</td><td class="r">300 € HT</td></tr>
+      <tr><td><b>E-mail</b></td><td>Une recette du kit envoyée le lendemain du cours</td><td>Après chaque cours</td><td class="r">0 €</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:12px">Processus de vente et relation client</h3>
+  <div class="steps">
+    <div class="step"><b>Découvrir</b><span>Le client cuisine avec les produits du kit pendant le cours.</span></div>
+    <div class="step"><b>Goûter</b><span>Dégustation en fin de séance, il voit la différence.</span></div>
+    <div class="step"><b>Acheter</b><span>Vente sur place, paiement immédiat.</span></div>
+    <div class="step"><b>Refaire</b><span>Recette envoyée par e-mail le lendemain.</span></div>
+    <div class="step"><b>Revenir</b><span>Relance à 30 jours : nouveau cours ou recharge du kit.</span></div>
+  </div>
+  <p class="small" style="margin-top:5px">Suivi dans notre fichier client : achats, satisfaction, date du dernier cours. Théo y consacre 20 h par mois (commandes, stock, suivi).</p>
+
+  <h3 style="margin-top:12px">Rentabilité prévisionnelle</h3>
+  <table>
+    <thead><tr><th>Mois</th><th class="r">Kits vendus</th><th class="r">CA HT</th><th class="r">Achats HT</th><th class="r">Marge brute</th></tr></thead>
+    <tbody>
+      <tr><td>Août (stock de 230)</td><td class="r">230</td><td class="r">3 220 €</td><td class="r">2 240 €</td><td class="r">980 €</td></tr>
+      <tr><td>Septembre</td><td class="r">270</td><td class="r">3 780 €</td><td class="r">2 700 €</td><td class="r">1 080 €</td></tr>
+      <tr><td>Octobre à décembre</td><td class="r">300 / mois</td><td class="r">4 200 €</td><td class="r">3 000 €</td><td class="r">1 200 €</td></tr>
+    </tbody>
+  </table>
+  <p class="small" style="margin-top:4px">Achats par lots de 200, payés comptant. Le stock non vendu se garde pour le mois suivant. Août : 30 kits Tastymed restants (achetés 8 €) + 200 Tradinette.</p>
+
+  <div class="foot">Sainplement · Manger sain, c'est sainplement facile. · Équipe 06_GRE03 : Titouan POUGNEAUD, Romain BEAUDOIN, Yasmine ZAITER, Lou LESNE</div>
+</section>
+
+</div>
+</body>
+</html>
