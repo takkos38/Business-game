@@ -102,3 +102,6 @@ Domicile **37 €** / **55 min** / épices / Gourmand · Collectifs **15 €** (
 - Concurrents kits : LYO07 est passé chez Tradinette à 15 € et fait 13,5 % ; TOU02 et MON01 restent chez Tastymed à 13 € (16,2 % et 15 %).
 - La baisse du résultat vient des choix du mode attaque : marge des kits (≈ −490 €), collectifs à 15 € (≈ −460 €), domicile à 37 € (≈ −280 €), épices (≈ −160 €).
 - Accompagnement Julien encore à 0 : engagement 81,6 %, 5,5 h perdues.
+
+## T9 – Septembre (recommandé, après note M09 : banquier + accompagnement d'Amine)
+Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / aromates / Approfondissement · Kits : retour **Tastymed**, 1 lot de 100 en plus des 156 en stock, prix 14 € · **pas d'emprunt** · accompagnement Julien 6 h + Amine 8 h (pris sur Alice ; Julien et Amine ont de la capacité libre) · Amine à **vélo** · flyers devis 1 · réseaux sociaux 2 h · études concurrents domicile + collectifs (Théo à 40 h).
