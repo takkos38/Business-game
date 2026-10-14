@@ -128,3 +128,10 @@ Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / ar
 
 ## T11 – Novembre (recommandé)
 Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / aromates / Approfondissement · Kits Tastymed 300 à 14 € · **média aucun, flyers aucun, études aucune** (capacité saturée : la pub amène des clients qu'on ne peut pas servir) · réseaux sociaux 8 h (Théo : 10 + 20 + 8 = 38 h, Alice 0 h d'admin) · accompagnement Julien 4 h + Amine 6 h · pas d'emprunt, pas de nouvel équipement.
+
+## Clôture de l'exercice – Décembre (T12)
+- Classement final : **5e** (83,9). 1er en cumulé de janvier à juillet. MON01 1er (88,5), NIC06 2e (87,3), TOU02 3e (86,3), LYO07 4e (84,6).
+- Décembre : CA 15 404 € (record), résultat 1 186 €, PDM globale 10,3 %, satisfaction domicile 77,0. Domicile 160 cours (37 €/45 min), collectifs 286 (15 €/60 min, 33 ventes perdues), kits 371 (Tradinette, 600 achetés → stock 479).
+- Année : CA **119 480 €** (domicile 52 984 · collectifs 42 402 · kits 24 094), résultat **+3 992,88 €** (T1 −1 149 · T2 −153 · T3 +3 146 · T4 +2 149).
+- Bilan 31/12 : total 17 921 € ; immobilisations 5 500, stock 4 790, créances 5 148, trésorerie 2 483 ; capitaux propres 11 993 (capital 8 000 + résultat 3 993), emprunt 3 771, fournisseurs 960, TVA 1 198.
+- Livrable final : deck « Sainplement – Finale Top Chef Kuisto » (10 slides, innovation Boîte mystère : Sainplement Immersion, réalité mixte + coach IA) : https://claude.ai/artifact/4kZEUn6iT6kLrnj5FYTGZf
