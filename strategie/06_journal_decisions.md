@@ -116,3 +116,15 @@ Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / ar
 
 ## T10 – Octobre (recommandé, note M10 : renouvellement du matériel domicile + équipement collectifs)
 Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / aromates / Approfondissement · Kits : Tastymed, **3 lots (300)**, 14 € · matériel domicile **devis 2 EuroChef** (350 €, 2 h) · équipement collectifs **option 2 Cuisine Pro** (3 000 €) · flyers devis 1 · réseaux sociaux 2 h · études 0 (Théo : 10 + 2 + 20 + 2 + 4 + 2 = 40 h) · accompagnement Julien 6 h + Amine 8 h · Amine en **transports en commun** · pas d'emprunt.
+
+### Résultats T10 – Octobre
+- Classement : **4e** (85,6, −1,6), score mensuel 71,6. MON01 90,4 ; LYO07 85,9 ; NIC06 85,7 (2e à 4e en 0,3 pt).
+- Axes : Financier **19 %** · Commercial 59 % · Responsable 106 % · Efficace 102 %.
+- CA 13 085 € (+1 432 €), résultat **134 €**. Dépenses ajoutées hors plan : média 500 €, flyers 500 € (au lieu de 300), 3 études 150 €. Équipement Cuisine Pro 3 000 € + EuroChef 350 € (immobilisés). Trésorerie 4 843 €.
+- Domicile 125 (37 €/55 min Gourmand), satisfaction 72,1 (+2,4). Collectifs 284 (−34), **27 ventes perdues**, satisfaction 64,1. Kits 300/300 vendus (Tastymed).
+- Alice : **27 h d'admin** (10 h réseaux, 9 h études, 4 h com) → 0 h de collectifs. Accompagnement toujours à 0 (11,3 h perdues par manque d'engagement).
+- Concurrents : collectifs tous montés à 16-19 € (MON01 18 €/60 min 13,8 %) ; kits TOU02 13 € Tastymed 22,3 %, MON01 13 € Tradinette 17 %.
+- Note M11 : baisse saisonnière des clients en novembre-décembre, rebond attendu en janvier.
+
+## T11 – Novembre (recommandé)
+Domicile 37 € / 55 min / épices / Gourmand · Collectifs 15 € / 70 min / aromates / Approfondissement · Kits Tastymed 300 à 14 € · **média aucun, flyers aucun, études aucune** (capacité saturée : la pub amène des clients qu'on ne peut pas servir) · réseaux sociaux 8 h (Théo : 10 + 20 + 8 = 38 h, Alice 0 h d'admin) · accompagnement Julien 4 h + Amine 6 h · pas d'emprunt, pas de nouvel équipement.
